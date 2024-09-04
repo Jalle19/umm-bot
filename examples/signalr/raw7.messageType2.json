@@ -1,0 +1,54 @@
+{
+  "C": "s-0,1217E70|1,124ABFB|2,122749B|3,121679D|4,1216ED3",
+  "M": [
+    {
+      "H": "MessageHub",
+      "M": "newMessage",
+      "A": [
+        {
+          "MessageType": 2,
+          "IsOutdated": false,
+          "UnavailabilityType": 2,
+          "ReasonCode": 2,
+          "EventStart": null,
+          "EventStop": null,
+          "UnavailabilityReason": "Reduced production at Troll A due to planned maintenance at Kollsnes Process Plant.",
+          "Remarks": "",
+          "OtherMarketUnits": null,
+          "ProductionUnits": null,
+          "GenerationUnits": null,
+          "ConsumptionUnits": [
+            {
+              "Name": "Troll A",
+              "Eic": "50WC000000020203",
+              "AreaEic": "10Y1001A1001A48H",
+              "AreaName": "NO5",
+              "InstalledCapacity": 215,
+              "TimePeriods": [
+                {
+                  "UnavailableCapacity": 140,
+                  "AvailableCapacity": 75,
+                  "EventStart": "2024-09-02T04:00:00Z",
+                  "EventStop": "2024-09-03T04:00:00Z"
+                }
+              ]
+            }
+          ],
+          "TransmissionUnits": null,
+          "OtherUnits": null,
+          "Assets": null,
+          "Areas": null,
+          "MarketParticipants": null,
+          "EventStatus": 1,
+          "CancellationReason": null,
+          "MessageId": "6e3d2f3a-571c-4b12-a23a-ec27743453c7",
+          "Version": 1,
+          "PublicationDate": "2024-09-01T08:22:51.1245389Z",
+          "PublisherId": "N02342",
+          "PublisherName": "Gassco AS",
+          "AcerRssMessageIds": null
+        }
+      ]
+    }
+  ]
+}

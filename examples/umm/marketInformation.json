@@ -1,0 +1,63 @@
+{
+  "messageType": 5,
+  "isOutdated": false,
+  "eventStart": "2024-09-02T06:00:00Z",
+  "eventStop": "2024-09-06T12:00:00Z",
+  "remarks": "Kemijoki river. Installed production capacity 800 MW. Due to maintenances at multiple HPPs the available capacity varies between 590-670 MW.",
+  "otherMarketUnits": "Kemijoki river",
+  "areas": [
+    {
+      "name": "FI",
+      "code": "10YFI-1--------U"
+    }
+  ],
+  "marketParticipants": [
+    {
+      "name": "Fortum Power and Heat Oy",
+      "code": "A0001899F.FI",
+      "acerCode": "A0001899F.FI",
+      "eicCode": "23XFORTUMPOWER-W",
+      "leiCode": "6354008VHNYEWM9XM160"
+    },
+    {
+      "name": "Kemijoki Oy",
+      "code": "A0005329S.FI",
+      "acerCode": "A0005329S.FI",
+      "eicCode": "44X-000000000423"
+    },
+    {
+      "name": "Lapin Sähkövoima Oy",
+      "code": "A0011972R.FI",
+      "acerCode": "A0011972R.FI"
+    },
+    {
+      "name": "UPM Energy Oy",
+      "code": "A00120819.FI",
+      "acerCode": "A00120819.FI",
+      "eicCode": "44X-000000000148"
+    },
+    {
+      "name": "Helen Oy",
+      "code": "A00014137.FI",
+      "acerCode": "A00014137.FI",
+      "eicCode": "23XHELSINKIENER3",
+      "leiCode": "743700CXEJT6NFCEFH10"
+    },
+    {
+      "name": "Ounastuotanto Oy",
+      "code": "A0008491W.FI",
+      "acerCode": "A0008491W.FI",
+      "eicCode": "44X-00000000197B",
+      "leiCode": "743700USB5C4WHN4Y216"
+    }
+  ],
+  "eventStatus": 1,
+  "messageId": "b8d13b40-0b6e-42c8-b83a-54bfd46dfe48",
+  "version": 1,
+  "publicationDate": "2024-08-30T07:45:24.058566Z",
+  "publisherId": "N00290",
+  "publisherName": "Fortum Power and Heat Oy",
+  "acerRssMessageIds": [
+    "OMIMSG-03H1QJKORB4L7F938Z_001"
+  ]
+}

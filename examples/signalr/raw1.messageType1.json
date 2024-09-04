@@ -1,0 +1,97 @@
+{
+  "C": "s-0,1217DAA|1,124AB12|2,12273F4|3,12166A9|4,1216DF7",
+  "M": [
+    {
+      "H": "MessageHub",
+      "M": "updateMessage",
+      "A": [
+        {
+          "MessageType": 1,
+          "IsOutdated": false,
+          "UnavailabilityType": 2,
+          "ReasonCode": 2,
+          "EventStart": null,
+          "EventStop": null,
+          "UnavailabilityReason": "General maintenance of the unit",
+          "Remarks": "",
+          "OtherMarketUnits": null,
+          "ProductionUnits": null,
+          "GenerationUnits": [
+            {
+              "ProductionUnitName": "Auvere",
+              "ProductionUnitEic": "38W-KTJ-AUVERE-Z",
+              "ProductionUnitInstalledCapacity": 274,
+              "AreaEic": "10Y1001A1001A39I",
+              "AreaName": "EE",
+              "FuelType": 7,
+              "Name": "G-1",
+              "Eic": "38W-KTJ-AUV-G1-8",
+              "InstalledCapacity": 274,
+              "PowerFeedIn": null,
+              "TimePeriods": [
+                {
+                  "UnavailableCapacity": 94,
+                  "AvailableCapacity": 180,
+                  "EventStart": "2024-07-18T22:00:00Z",
+                  "EventStop": "2024-07-18T23:00:00Z"
+                },
+                {
+                  "UnavailableCapacity": 174,
+                  "AvailableCapacity": 100,
+                  "EventStart": "2024-07-18T23:00:00Z",
+                  "EventStop": "2024-07-19T00:00:00Z"
+                },
+                {
+                  "UnavailableCapacity": 274,
+                  "AvailableCapacity": 0,
+                  "EventStart": "2024-07-19T00:00:00Z",
+                  "EventStop": "2024-09-03T22:00:00Z"
+                },
+                {
+                  "UnavailableCapacity": 214,
+                  "AvailableCapacity": 60,
+                  "EventStart": "2024-09-03T22:00:00Z",
+                  "EventStop": "2024-09-04T00:00:00Z"
+                },
+                {
+                  "UnavailableCapacity": 174,
+                  "AvailableCapacity": 100,
+                  "EventStart": "2024-09-04T00:00:00Z",
+                  "EventStop": "2024-09-04T22:00:00Z"
+                },
+                {
+                  "UnavailableCapacity": 109,
+                  "AvailableCapacity": 165,
+                  "EventStart": "2024-09-04T22:00:00Z",
+                  "EventStop": "2024-09-04T23:00:00Z"
+                }
+              ]
+            }
+          ],
+          "ConsumptionUnits": null,
+          "TransmissionUnits": null,
+          "OtherUnits": null,
+          "Assets": null,
+          "Areas": null,
+          "MarketParticipants": [
+            {
+              "Name": "Enefit Power AS",
+              "Code": "A0002678V.EE",
+              "AcerCode": "A0002678V.EE",
+              "EicCode": null,
+              "LeiCode": null
+            }
+          ],
+          "EventStatus": 1,
+          "CancellationReason": null,
+          "MessageId": "451a508f-a5b6-4a08-a9ae-b51cdbfcfcc2",
+          "Version": 4,
+          "PublicationDate": "2024-09-01T06:34:40.0609696Z",
+          "PublisherId": "N00219",
+          "PublisherName": "Eesti Energia AS",
+          "AcerRssMessageIds": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "blocks": [
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "Production unavailability"
+      }
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "section",
+      "fields": [
+        {
+          "type": "mrkdwn",
+          "text": "*Event start*\n2024-09-04T08:30"
+        },
+        {
+          "type": "mrkdwn",
+          "text": "*Event stop*\n2024-09-04T14:00"
+        },
+        {
+          "type": "mrkdwn",
+          "text": "*Type*\nPlanned"
+        },
+        {
+          "type": "mrkdwn",
+          "text": "*Reason*\nInterruption of the B line in Pahkamaa. New lightning rope for Jylkkä 110 kV switchyard."
+        }
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "section",
+      "fields": [
+        {
+          "type": "mrkdwn",
+          "text": "*Unit*\nMutkalampi South"
+        },
+        {
+          "type": "mrkdwn",
+          "text": "*Capacity*\n200 MW"
+        },
+        {
+          "type": "mrkdwn",
+          "text": "*Available*\n0 MW"
+        },
+        {
+          "type": "mrkdwn",
+          "text": "*Unavailable*\n200 MW"
+        }
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "More information: https://umm.nordpoolgroup.com/#/messages/9809e39a-2718-47e9-baf2-243e48795888/2"
+      }
+    }
+  ]
+}

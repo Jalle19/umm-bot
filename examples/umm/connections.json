@@ -1,0 +1,410 @@
+[
+  {
+    "name": "BY → LT",
+    "code": "BY-LT"
+  },
+  {
+    "name": "DE-50Hertz → DK2",
+    "code": "DE-50Hertz-DK2"
+  },
+  {
+    "name": "DE-LU → DK1",
+    "code": "DE-LU-DK1"
+  },
+  {
+    "name": "DE-LU → DK2",
+    "code": "DE-LU-DK2"
+  },
+  {
+    "name": "DE-LU → NO2",
+    "code": "DE-LU-NO2"
+  },
+  {
+    "name": "DE-LU → SE4",
+    "code": "DE-LU-SE4"
+  },
+  {
+    "name": "DE-TenneT → DK1",
+    "code": "DE-TenneT-DK1"
+  },
+  {
+    "name": "DE-TenneT → SE4",
+    "code": "DE-TenneT-SE4"
+  },
+  {
+    "name": "DK1 → DE-LU",
+    "code": "DK1-DE-LU"
+  },
+  {
+    "name": "DK1 → DE-TenneT",
+    "code": "DK1-DE-TenneT"
+  },
+  {
+    "name": "DK1 → DK1A",
+    "code": "DK1-DK1A"
+  },
+  {
+    "name": "DK1 → DK2",
+    "code": "DK1-DK2"
+  },
+  {
+    "name": "DK1 → GB",
+    "code": "DK1-GB"
+  },
+  {
+    "name": "DK1 → NL",
+    "code": "DK1-NL"
+  },
+  {
+    "name": "DK1 → NO2",
+    "code": "DK1-NO2"
+  },
+  {
+    "name": "DK1 → SE3",
+    "code": "DK1-SE3"
+  },
+  {
+    "name": "DK1A → DK1",
+    "code": "DK1A-DK1"
+  },
+  {
+    "name": "DK1A → NO2",
+    "code": "DK1A-NO2"
+  },
+  {
+    "name": "DK2 → DE-50Hertz",
+    "code": "DK2-DE-50Hertz"
+  },
+  {
+    "name": "DK2 → DE-LU",
+    "code": "DK2-DE-LU"
+  },
+  {
+    "name": "DK2 → DK1",
+    "code": "DK2-DK1"
+  },
+  {
+    "name": "DK2 → NO2",
+    "code": "DK2-NO2"
+  },
+  {
+    "name": "DK2 → SE4",
+    "code": "DK2-SE4"
+  },
+  {
+    "name": "EE → FI",
+    "code": "EE-FI"
+  },
+  {
+    "name": "EE → LV",
+    "code": "EE-LV"
+  },
+  {
+    "name": "EE → RU",
+    "code": "EE-RU"
+  },
+  {
+    "name": "FI → EE",
+    "code": "FI-EE"
+  },
+  {
+    "name": "FI → RU",
+    "code": "FI-RU"
+  },
+  {
+    "name": "FI → SE1",
+    "code": "FI-SE1"
+  },
+  {
+    "name": "FI → SE3",
+    "code": "FI-SE3"
+  },
+  {
+    "name": "FR → GB",
+    "code": "FR-GB"
+  },
+  {
+    "name": "GB → DK1",
+    "code": "GB-DK1"
+  },
+  {
+    "name": "GB → FR",
+    "code": "GB-FR"
+  },
+  {
+    "name": "GB → NL",
+    "code": "GB-NL"
+  },
+  {
+    "name": "GB → NO2",
+    "code": "GB-NO2"
+  },
+  {
+    "name": "KAL → LT",
+    "code": "KAL-LT"
+  },
+  {
+    "name": "LT → BY",
+    "code": "LT-BY"
+  },
+  {
+    "name": "LT → KAL",
+    "code": "LT-KAL"
+  },
+  {
+    "name": "LT → LV",
+    "code": "LT-LV"
+  },
+  {
+    "name": "LT → PL",
+    "code": "LT-PL"
+  },
+  {
+    "name": "LT → SE4",
+    "code": "LT-SE4"
+  },
+  {
+    "name": "LV → EE",
+    "code": "LV-EE"
+  },
+  {
+    "name": "LV → LT",
+    "code": "LV-LT"
+  },
+  {
+    "name": "LV → LV",
+    "code": "LV-LV"
+  },
+  {
+    "name": "LV → RU",
+    "code": "LV-RU"
+  },
+  {
+    "name": "NL → DK1",
+    "code": "NL-DK1"
+  },
+  {
+    "name": "NL → GB",
+    "code": "NL-GB"
+  },
+  {
+    "name": "NL → NO2",
+    "code": "NL-NO2"
+  },
+  {
+    "name": "NO1 → NL",
+    "code": "NO1-NL"
+  },
+  {
+    "name": "NO1 → NO2",
+    "code": "NO1-NO2"
+  },
+  {
+    "name": "NO1 → NO3",
+    "code": "NO1-NO3"
+  },
+  {
+    "name": "NO1 → NO5",
+    "code": "NO1-NO5"
+  },
+  {
+    "name": "NO1 → SE3",
+    "code": "NO1-SE3"
+  },
+  {
+    "name": "NO1A → NO1",
+    "code": "NO1A-NO1"
+  },
+  {
+    "name": "NO2 → DE-LU",
+    "code": "NO2-DE-LU"
+  },
+  {
+    "name": "NO2 → DK1",
+    "code": "NO2-DK1"
+  },
+  {
+    "name": "NO2 → DK1A",
+    "code": "NO2-DK1A"
+  },
+  {
+    "name": "NO2 → GB",
+    "code": "NO2-GB"
+  },
+  {
+    "name": "NO2 → NL",
+    "code": "NO2-NL"
+  },
+  {
+    "name": "NO2 → NO1",
+    "code": "NO2-NO1"
+  },
+  {
+    "name": "NO2 → NO2",
+    "code": "NO2-NO2"
+  },
+  {
+    "name": "NO2 → NO2A",
+    "code": "NO2-NO2A"
+  },
+  {
+    "name": "NO2 → NO5",
+    "code": "NO2-NO5"
+  },
+  {
+    "name": "NO2A → NO2",
+    "code": "NO2A-NO2"
+  },
+  {
+    "name": "NO3 → NO1",
+    "code": "NO3-NO1"
+  },
+  {
+    "name": "NO3 → NO4",
+    "code": "NO3-NO4"
+  },
+  {
+    "name": "NO3 → NO5",
+    "code": "NO3-NO5"
+  },
+  {
+    "name": "NO3 → SE2",
+    "code": "NO3-SE2"
+  },
+  {
+    "name": "NO4 → NO3",
+    "code": "NO4-NO3"
+  },
+  {
+    "name": "NO4 → SE1",
+    "code": "NO4-SE1"
+  },
+  {
+    "name": "NO4 → SE2",
+    "code": "NO4-SE2"
+  },
+  {
+    "name": "NO5 → NO1",
+    "code": "NO5-NO1"
+  },
+  {
+    "name": "NO5 → NO2",
+    "code": "NO5-NO2"
+  },
+  {
+    "name": "NO5 → NO3",
+    "code": "NO5-NO3"
+  },
+  {
+    "name": "PL → LT",
+    "code": "PL-LT"
+  },
+  {
+    "name": "PL → SE4",
+    "code": "PL-SE4"
+  },
+  {
+    "name": "RU → EE",
+    "code": "RU-EE"
+  },
+  {
+    "name": "RU → FI",
+    "code": "RU-FI"
+  },
+  {
+    "name": "RU → LV",
+    "code": "RU-LV"
+  },
+  {
+    "name": "SE1 → FI",
+    "code": "SE1-FI"
+  },
+  {
+    "name": "SE1 → NO4",
+    "code": "SE1-NO4"
+  },
+  {
+    "name": "SE1 → SE2",
+    "code": "SE1-SE2"
+  },
+  {
+    "name": "SE2 → NO3",
+    "code": "SE2-NO3"
+  },
+  {
+    "name": "SE2 → NO4",
+    "code": "SE2-NO4"
+  },
+  {
+    "name": "SE2 → SE1",
+    "code": "SE2-SE1"
+  },
+  {
+    "name": "SE2 → SE3",
+    "code": "SE2-SE3"
+  },
+  {
+    "name": "SE3 → DK1",
+    "code": "SE3-DK1"
+  },
+  {
+    "name": "SE3 → FI",
+    "code": "SE3-FI"
+  },
+  {
+    "name": "SE3 → NO1",
+    "code": "SE3-NO1"
+  },
+  {
+    "name": "SE3 → SE2",
+    "code": "SE3-SE2"
+  },
+  {
+    "name": "SE3 → SE3",
+    "code": "SE3-SE3"
+  },
+  {
+    "name": "SE3 → SE3A",
+    "code": "SE3-SE3A"
+  },
+  {
+    "name": "SE3 → SE3LS",
+    "code": "SE3-SE3LS"
+  },
+  {
+    "name": "SE3 → SE4",
+    "code": "SE3-SE4"
+  },
+  {
+    "name": "SE3LS → SE3",
+    "code": "SE3LS-SE3"
+  },
+  {
+    "name": "SE4 → DE-LU",
+    "code": "SE4-DE-LU"
+  },
+  {
+    "name": "SE4 → DE-TenneT",
+    "code": "SE4-DE-TenneT"
+  },
+  {
+    "name": "SE4 → DK2",
+    "code": "SE4-DK2"
+  },
+  {
+    "name": "SE4 → LT",
+    "code": "SE4-LT"
+  },
+  {
+    "name": "SE4 → PL",
+    "code": "SE4-PL"
+  },
+  {
+    "name": "SE4 → PLC",
+    "code": "SE4-PLC"
+  },
+  {
+    "name": "SE4 → SE3",
+    "code": "SE4-SE3"
+  }
+]

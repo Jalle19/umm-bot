@@ -1,0 +1,73 @@
+{
+  "blocks": [
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "Transmission unavailability (updated)"
+      }
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "section",
+      "fields": [
+        {
+          "type": "mrkdwn",
+          "text": "*Event start*\n2024-01-26T00:10"
+        },
+        {
+          "type": "mrkdwn",
+          "text": "*Event stop*\n2024-09-04T01:00"
+        },
+        {
+          "type": "mrkdwn",
+          "text": "*Type*\nUnplanned"
+        },
+        {
+          "type": "mrkdwn",
+          "text": "*Reason*\nFailure in the cable system in Estonian shoreline. End time has been updated."
+        },
+        {
+          "type": "mrkdwn",
+          "text": "*Remarks*\nEstlink 2 cable failure has been repaired."
+        }
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "section",
+      "fields": [
+        {
+          "type": "mrkdwn",
+          "text": "*Area*\n:flag-fi: FI -> :flag-ee: EE"
+        },
+        {
+          "type": "mrkdwn",
+          "text": "*Capacity*\n1016 MW"
+        },
+        {
+          "type": "mrkdwn",
+          "text": "*Available*\n358 MW"
+        },
+        {
+          "type": "mrkdwn",
+          "text": "*Unavailable*\n658 MW"
+        }
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "More information: https://umm.nordpoolgroup.com/#/messages/5c32c249-7d74-44f1-809b-d4ad14c0eca7/10"
+      }
+    }
+  ]
+}

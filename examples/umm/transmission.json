@@ -1,0 +1,57 @@
+{
+  "messageType": 3,
+  "isOutdated": false,
+  "unavailabilityType": 2,
+  "reasonCode": 2,
+  "eventStart": "2024-09-03T22:00:00Z",
+  "eventStop": "2024-09-06T15:00:00Z",
+  "unavailabilityReason": "Estlink 1 and 2 available capacity FI->EE are limited due to renewal works of 400 kV Rauma substation.",
+  "transmissionUnits": [
+    {
+      "name": "FI → EE",
+      "inAreaEic": "10YFI-1--------U",
+      "inAreaName": "FI",
+      "outAreaEic": "10Y1001A1001A39I",
+      "outAreaName": "EE",
+      "installedCapacity": 1016,
+      "timePeriods": [
+        {
+          "unavailableCapacity": 458,
+          "availableCapacity": 558,
+          "eventStart": "2024-09-03T22:00:00Z",
+          "eventStop": "2024-09-06T15:00:00Z"
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "name": "Estlink",
+      "code": "10T-FI-EE-00001Q"
+    },
+    {
+      "name": "Estlink 2",
+      "code": "10T-FI-EE-00002O"
+    }
+  ],
+  "marketParticipants": [
+    {
+      "name": "NUCS",
+      "code": "10V1001C--000187",
+      "acerCode": "000000000.00",
+      "eicCode": "10V1001C--000187"
+    },
+    {
+      "name": "Elering",
+      "code": "10X1001A1001A39W",
+      "acerCode": "A0002679T.EE",
+      "eicCode": "10X1001A1001A39W"
+    }
+  ],
+  "eventStatus": 1,
+  "messageId": "69e30cc9-c560-43ca-bb64-111867bca3a3",
+  "version": 1,
+  "publicationDate": "2024-09-03T07:40:23Z",
+  "publisherId": "N01250",
+  "publisherName": "Fingrid Oyj"
+}

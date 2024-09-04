@@ -1,0 +1,84 @@
+{
+  "C": "s-0,1217F47|1,124AD08|2,12275AD|3,1216893|4,1217002",
+  "M": [
+    {
+      "H": "MessageHub",
+      "M": "newMessage",
+      "A": [
+        {
+          "MessageType": 3,
+          "IsOutdated": false,
+          "UnavailabilityType": 2,
+          "ReasonCode": 2,
+          "EventStart": null,
+          "EventStop": null,
+          "UnavailabilityReason": "Regarding LT->PL capacity limitation please see UMM: \\nhttps://umm.nordpoolgroup.com/#/messages/85a6a72f-b87e-4e42-bbf2-d6fcfe3f2a03/3",
+          "Remarks": null,
+          "OtherMarketUnits": null,
+          "ProductionUnits": null,
+          "GenerationUnits": null,
+          "ConsumptionUnits": null,
+          "TransmissionUnits": [
+            {
+              "Name": "LT → PL",
+              "InAreaEic": "10YLT-1001A0008Q",
+              "InAreaName": "LT",
+              "OutAreaEic": "10YPL-AREA-----S",
+              "OutAreaName": "PL",
+              "InstalledCapacity": 500,
+              "TimePeriods": [
+                {
+                  "UnavailableCapacity": 150,
+                  "AvailableCapacity": 350,
+                  "EventStart": "2024-09-01T22:00:00Z",
+                  "EventStop": "2024-09-02T21:59:00Z"
+                }
+              ]
+            },
+            {
+              "Name": "PL → LT",
+              "InAreaEic": "10YPL-AREA-----S",
+              "InAreaName": "PL",
+              "OutAreaEic": "10YLT-1001A0008Q",
+              "OutAreaName": "LT",
+              "InstalledCapacity": 500,
+              "TimePeriods": [
+                {
+                  "UnavailableCapacity": 8,
+                  "AvailableCapacity": 492,
+                  "EventStart": "2024-09-01T22:00:00Z",
+                  "EventStop": "2024-09-02T21:59:00Z"
+                }
+              ]
+            }
+          ],
+          "OtherUnits": null,
+          "Assets": [
+            {
+              "Name": "Alytus-Elk Bis 2",
+              "Code": "10T-LT-PL-000029"
+            }
+          ],
+          "Areas": null,
+          "MarketParticipants": [
+            {
+              "Name": "LITGRID AB",
+              "Code": "10X1001A1001A55Y",
+              "AcerCode": "A00023185.LT",
+              "EicCode": "10X1001A1001A55Y",
+              "LeiCode": null
+            }
+          ],
+          "EventStatus": 1,
+          "CancellationReason": null,
+          "MessageId": "f1203659-c8a4-4519-b167-aaa3e5cd7c20",
+          "Version": 1,
+          "PublicationDate": "2024-09-01T10:40:54.1008208Z",
+          "PublisherId": "N00412",
+          "PublisherName": "LITGRID AB",
+          "AcerRssMessageIds": null
+        }
+      ]
+    }
+  ]
+}

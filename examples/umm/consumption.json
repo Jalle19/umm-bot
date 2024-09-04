@@ -1,0 +1,42 @@
+{
+  "messageType": 2,
+  "isOutdated": false,
+  "unavailabilityType": 1,
+  "reasonCode": 2,
+  "unavailabilityReason": "Maintenance",
+  "remarks": "",
+  "consumptionUnits": [
+    {
+      "name": "Anjalankoski Paper Mill",
+      "eic": "44W-K-PJ-000000K",
+      "areaEic": "10YFI-1--------U",
+      "areaName": "FI",
+      "installedCapacity": 140,
+      "timePeriods": [
+        {
+          "unavailableCapacity": 90,
+          "availableCapacity": 50,
+          "eventStart": "2024-09-03T04:30:00Z",
+          "eventStop": "2024-09-03T08:00:00Z"
+        }
+      ]
+    }
+  ],
+  "marketParticipants": [
+    {
+      "name": "Stora Enso Oyj",
+      "code": "A0002277W.FI",
+      "acerCode": "A0002277W.FI",
+      "eicCode": "44X-00000000100F"
+    }
+  ],
+  "eventStatus": 1,
+  "messageId": "10da4e19-67a3-4d6f-b3e0-2067bc44ae28",
+  "version": 1,
+  "publicationDate": "2024-09-03T04:33:27.615971Z",
+  "publisherId": "N02993",
+  "publisherName": "PD Power Oy",
+  "acerRssMessageIds": [
+    "EUIMSG-U5OTFUV22M0X3MXGSP_001"
+  ]
+}
