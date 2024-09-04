@@ -1,5 +1,5 @@
-import { Message, MessageThread } from "./types";
-import { parseMessage } from "./parser";
+import { Message, MessageThread } from './types'
+import { parseMessage } from './parser'
 
 export class UmmClient {
   BASE_URL = 'https://ummapi.nordpoolgroup.com'

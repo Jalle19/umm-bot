@@ -1,4 +1,4 @@
-import { GenerationUnit, Message, ProductionUnit, PushNotificationMessage, TimePeriod } from "./types";
+import { GenerationUnit, Message, ProductionUnit, PushNotificationMessage, TimePeriod } from './types'
 
 export const parsePushMessage = (rawMessage: unknown): PushNotificationMessage => {
   return {
@@ -21,12 +21,12 @@ export const parseMessage = (rawMessage: string): Message => {
 }
 
 export const getBestTimePeriod = (timePeriods: TimePeriod[]): TimePeriod | undefined => {
-  return timePeriods.find(timePeriod => timePeriod.eventStop.getTime() > (new Date()).getTime())
+  return timePeriods.find((timePeriod) => timePeriod.eventStop.getTime() > new Date().getTime())
 }
 
 export const getProductionUnitName = (unit: ProductionUnit | GenerationUnit): string => {
   if ((unit as GenerationUnit).productionUnitName) {
-    const generationUnit = unit as GenerationUnit;
+    const generationUnit = unit as GenerationUnit
     return `${generationUnit.productionUnitName} ${generationUnit.name}`
   }
 

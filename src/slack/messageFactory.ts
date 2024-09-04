@@ -1,6 +1,6 @@
-import { GenerationUnit, Message, ProductionUnit, TransmissionUnit, UnavailabilityType, Unit } from "../umm/types";
-import { AnyBlock, DividerBlock, SectionBlock } from "@slack/web-api";
-import { getBestTimePeriod, getProductionUnitName } from "../umm/parser";
+import { GenerationUnit, Message, ProductionUnit, TransmissionUnit, UnavailabilityType, Unit } from '../umm/types'
+import { AnyBlock, DividerBlock, SectionBlock } from '@slack/web-api'
+import { getBestTimePeriod, getProductionUnitName } from '../umm/parser'
 
 const areaFlagMap: Map<string, string> = new Map([
   ['FI', 'flag-fi'],
@@ -26,39 +26,39 @@ const createEventSection = (message: Message, unit?: Unit): SectionBlock => {
   }
 
   return {
-    "type": "section",
-    "fields": [
+    'type': 'section',
+    'fields': [
       {
-        "type": "mrkdwn",
-        "text": `*Event start*\n${timePeriod.eventStart}`
+        'type': 'mrkdwn',
+        'text': `*Event start*\n${timePeriod.eventStart}`,
       },
       {
-        "type": "mrkdwn",
-        "text": `*Event stop*\n${timePeriod.eventStop}`
+        'type': 'mrkdwn',
+        'text': `*Event stop*\n${timePeriod.eventStop}`,
       },
       {
-        "type": "mrkdwn",
-        "text": `*Type*\n${plannedText}`
+        'type': 'mrkdwn',
+        'text': `*Type*\n${plannedText}`,
       },
       {
-        "type": "mrkdwn",
-        "text": `*Reason*\n${message.unavailabilityReason}`
+        'type': 'mrkdwn',
+        'text': `*Reason*\n${message.unavailabilityReason}`,
       },
       {
-        "type": "mrkdwn",
-        "text": `*Remarks*\n${message.remarks}`
-      }
-    ]
+        'type': 'mrkdwn',
+        'text': `*Remarks*\n${message.remarks}`,
+      },
+    ],
   }
 }
 
 const createMoreInfoSection = (message: Message): SectionBlock => {
   return {
-    "type": "section",
-    "text": {
-      "type": "mrkdwn",
-      "text": `More information: https://umm.nordpoolgroup.com/#/messages/${message.messageId}/${message.version}`
-    }
+    'type': 'section',
+    'text': {
+      'type': 'mrkdwn',
+      'text': `More information: https://umm.nordpoolgroup.com/#/messages/${message.messageId}/${message.version}`,
+    },
   }
 }
 
@@ -77,25 +77,25 @@ const createTransmissionUnitSection = (unit: TransmissionUnit): AnyBlock => {
   const unavailable = timePeriod ? `${timePeriod.unavailableCapacity} MW` : '~'
 
   return {
-    "type": "section",
-    "fields": [
+    'type': 'section',
+    'fields': [
       {
-        "type": "mrkdwn",
-        "text": `*Area*\n${areaText}`
+        'type': 'mrkdwn',
+        'text': `*Area*\n${areaText}`,
       },
       {
-        "type": "mrkdwn",
-        "text": `*Capacity*\n${unit.installedCapacity} MW`
+        'type': 'mrkdwn',
+        'text': `*Capacity*\n${unit.installedCapacity} MW`,
       },
       {
-        "type": "mrkdwn",
-        "text": `*Available*\n${available}`
+        'type': 'mrkdwn',
+        'text': `*Available*\n${available}`,
       },
       {
-        "type": "mrkdwn",
-        "text": `*Unavailable*\n${unavailable}`
-      }
-    ]
+        'type': 'mrkdwn',
+        'text': `*Unavailable*\n${unavailable}`,
+      },
+    ],
   }
 }
 
@@ -108,31 +108,31 @@ const createProductionUnitSection = (unit: ProductionUnit | GenerationUnit): Sec
   const name = areaFlag ? `:${areaFlag}: ${unitName}` : unitName
 
   return {
-    "type": "section",
-    "fields": [
+    'type': 'section',
+    'fields': [
       {
-        "type": "mrkdwn",
-        "text": `*Name*\n${name}`
+        'type': 'mrkdwn',
+        'text': `*Name*\n${name}`,
       },
       {
-        "type": "mrkdwn",
-        "text": `*Capacity*\n${unit.installedCapacity} MW`
+        'type': 'mrkdwn',
+        'text': `*Capacity*\n${unit.installedCapacity} MW`,
       },
       {
-        "type": "mrkdwn",
-        "text": `*Available*\n${available}`
+        'type': 'mrkdwn',
+        'text': `*Available*\n${available}`,
       },
       {
-        "type": "mrkdwn",
-        "text": `*Unavailable*\n${unavailable}`
-      }
-    ]
+        'type': 'mrkdwn',
+        'text': `*Unavailable*\n${unavailable}`,
+      },
+    ],
   }
 }
 
 const createDividerSection = (): DividerBlock => {
   return {
-    "type": "divider"
+    'type': 'divider',
   }
 }
 
@@ -141,32 +141,29 @@ export const createTransmissionUnavailabilityMessage = (message: Message): AnyBl
   const messageType = message.version === 1 ? 'new' : 'update'
 
   const headingSection = {
-    "type": "section",
-    "text": {
-      "type": "mrkdwn",
-      "text": `Transmission unavailability (${messageType})`
-    }
+    'type': 'section',
+    'text': {
+      'type': 'mrkdwn',
+      'text': `Transmission unavailability (${messageType})`,
+    },
   }
 
   let sections: AnyBlock[] = [
     headingSection,
     createDividerSection(),
-    createEventSection(message, message.transmissionUnits?.[0])
+    createEventSection(message, message.transmissionUnits?.[0]),
   ]
 
   const unitSections = message.transmissionUnits
-      // Ignore transmissions lines not related to us
-      //?.filter(unit => unit.inAreaName === 'FI' || unit.outAreaName === 'FI')
-      ?.map(unit => createTransmissionUnitSection(unit))
+    // Ignore transmissions lines not related to us
+    //?.filter(unit => unit.inAreaName === 'FI' || unit.outAreaName === 'FI')
+    ?.map((unit) => createTransmissionUnitSection(unit))
 
   if (unitSections) {
     sections.push(...unitSections)
   }
 
-  sections.push(...[
-    createDividerSection(),
-    createMoreInfoSection(message),
-  ])
+  sections.push(...[createDividerSection(), createMoreInfoSection(message)])
 
   return sections
 }
@@ -186,28 +183,21 @@ export const createProductionUnavailabilityMessage = (message: Message): AnyBloc
   const messageType = message.version === 1 ? 'new' : 'update'
 
   const headingSection = {
-    "type": "section",
-    "text": {
-      "type": "mrkdwn",
-      "text": `Production unavailability (${messageType})`
-    }
+    'type': 'section',
+    'text': {
+      'type': 'mrkdwn',
+      'text': `Production unavailability (${messageType})`,
+    },
   }
 
-  let sections: AnyBlock[] = [
-    headingSection,
-    createDividerSection(),
-    createEventSection(message, units?.[0]),
-  ]
+  let sections: AnyBlock[] = [headingSection, createDividerSection(), createEventSection(message, units?.[0])]
 
-  const unitSections = units?.map(unit => createProductionUnitSection(unit))
+  const unitSections = units?.map((unit) => createProductionUnitSection(unit))
   if (unitSections) {
     sections.push(...unitSections)
   }
 
-  sections.push(...[
-    createDividerSection(),
-    createMoreInfoSection(message)
-  ])
+  sections.push(...[createDividerSection(), createMoreInfoSection(message)])
 
   return sections
 }

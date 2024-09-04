@@ -1,9 +1,7 @@
-import { UmmClient } from "./umm/client";
-import { WebClient } from "@slack/web-api";
-import {
-  MessageType,
-} from "./umm/types";
-import { createProductionUnavailabilityMessage, createTransmissionUnavailabilityMessage } from "./slack/messageFactory";
+import { UmmClient } from './umm/client'
+import { WebClient } from '@slack/web-api'
+import { MessageType } from './umm/types'
+import { createProductionUnavailabilityMessage, createTransmissionUnavailabilityMessage } from './slack/messageFactory'
 
 // Verify we have what we need
 const SLACK_CHANNEL_ID = process.env.SLACK_CHANNEL_ID as string | undefined

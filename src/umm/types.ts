@@ -47,12 +47,12 @@ export enum EventStatus {
 
 export enum UnavailabilityType {
   Unplanned = 1,
-  Planned
+  Planned,
 }
 
 export enum ReasonCode {
   Failure = 1,
-  ForeseenMaintenance
+  ForeseenMaintenance,
 }
 
 type Eic = string
@@ -62,13 +62,9 @@ interface NameCodeThing {
   code: Eic
 }
 
-interface Area extends NameCodeThing {
+interface Area extends NameCodeThing {}
 
-}
-
-interface Asset extends NameCodeThing {
-
-}
+interface Asset extends NameCodeThing {}
 
 interface MarketParticipant extends NameCodeThing {
   acerCode: string
@@ -141,5 +137,5 @@ enum FuelType {
   Waste,
   WindOffshore,
   WindOnshore,
-  Other = 100
+  Other = 100,
 }
