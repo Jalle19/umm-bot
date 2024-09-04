@@ -1,0 +1,14 @@
+[Unit]
+Description=Chat bot for Nord Pool REMIT UMM push notifications
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/umm-bot
+ExecStartPre=/usr/bin/npm install
+ExecStartPre=/usr/bin/npm run build
+ExecStart=/usr/bin/node /opt/umm-bot/dist/umm-slack-bot.js
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
