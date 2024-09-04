@@ -28,15 +28,14 @@ if (!SLACK_CHANNEL_ID || !SLACK_BOT_TOKEN) {
     let slackMessage
     // Send events we're interested in to Slack
     if (ummMessage.messageType === MessageType.ProductionUnavailability) {
-      slackMessage = createProductionUnavailabilityMessage(ummMessage)
-      // if (ummMessage.productionUnits?.some(unit => unit.areaName === 'FI')) {
-      //   console.log('is finnish production')
-      // }
+      if (ummMessage.productionUnits?.some(unit => unit.areaName === 'FI') ||
+          ummMessage.generationUnits?.some(unit => unit.areaName === 'FI')) {
+        slackMessage = createProductionUnavailabilityMessage(ummMessage)
+      }
     } else if (ummMessage.messageType === MessageType.TransmissionUnavailability) {
-      slackMessage = createTransmissionUnavailabilityMessage(ummMessage)
-      // if (ummMessage.transmissionUnits?.some(unit => unit.inAreaName === 'FI' || unit.outAreaName === 'FI')) {
-      //   console.log('is finnish transmission')
-      // }
+      if (ummMessage.transmissionUnits?.some(unit => unit.inAreaName === 'FI' || unit.outAreaName === 'FI')) {
+        slackMessage = createTransmissionUnavailabilityMessage(ummMessage)
+      }
     }
 
     if (slackMessage) {
