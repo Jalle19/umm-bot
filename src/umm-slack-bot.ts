@@ -34,7 +34,7 @@ const isInterestingTransmissionUnavailabilityMessage = (ummMessage: Message): bo
   }
 
   // One of the areas must be in Finland
-  if (ummMessage.transmissionUnits?.some((unit) => unit.inAreaName === 'FI' || unit.outAreaName === 'FI')) {
+  if (!ummMessage.transmissionUnits?.some((unit) => unit.inAreaName === 'FI' || unit.outAreaName === 'FI')) {
     return false
   }
 
