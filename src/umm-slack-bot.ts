@@ -65,6 +65,8 @@ const isInterestingTransmissionUnavailabilityMessage = (ummMessage: Message): bo
       slackMessage = createProductionUnavailabilityMessage(ummMessage)
     } else if (isInterestingTransmissionUnavailabilityMessage(ummMessage)) {
       slackMessage = createTransmissionUnavailabilityMessage(ummMessage)
+    } else {
+      console.log(`Message ${ummMessage.messageId} version ${ummMessage.version} deemed uninteresting`)
     }
 
     if (slackMessage) {
