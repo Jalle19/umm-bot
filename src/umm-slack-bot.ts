@@ -1,7 +1,7 @@
 import { SignalrClient } from './signalr/client'
-import { parsePushMessage } from './umm/parser'
+import { getProductionUnavailabilityUnits, parsePushMessage } from './umm/parser'
 import { UmmClient } from './umm/client'
-import { MessageType } from './umm/types'
+import { Message, MessageType } from './umm/types'
 import { WebClient } from '@slack/web-api'
 import { createProductionUnavailabilityMessage, createTransmissionUnavailabilityMessage } from './slack/messageFactory'
 
@@ -11,6 +11,40 @@ const SLACK_BOT_TOKEN = process.env.SLACK_BOT_TOKEN as string | undefined
 
 if (!SLACK_CHANNEL_ID || !SLACK_BOT_TOKEN) {
   throw new Error('SLACK_CHANNEL_ID and SLACK_BOT_TOKEN must be defined')
+}
+
+const isInterestingProductionUnavailabilityMessage = (ummMessage: Message): boolean => {
+  if (ummMessage.messageType !== MessageType.ProductionUnavailability) {
+    return false
+  }
+
+  // Units have to be in Finland
+  const units = getProductionUnavailabilityUnits(ummMessage)
+  if (!units.some((unit) => unit.areaName === 'FI')) {
+    return false
+  }
+
+  // At least one time period must start in the past, we're not interested in future planned events
+  return units[0].timePeriods.some((timePeriod) => timePeriod.eventStart.getTime() < new Date().getTime())
+}
+
+const isInterestingTransmissionUnavailabilityMessage = (ummMessage: Message): boolean => {
+  if (ummMessage.messageType !== MessageType.TransmissionUnavailability) {
+    return false
+  }
+
+  // One of the areas must be in Finland
+  if (ummMessage.transmissionUnits?.some((unit) => unit.inAreaName === 'FI' || unit.outAreaName === 'FI')) {
+    return false
+  }
+
+  // At least one time period must start in the past, we're not interested in future planned events
+  const unit = ummMessage.transmissionUnits?.[0]
+  if (!unit) {
+    return false
+  }
+
+  return unit.timePeriods.some((timePeriod) => timePeriod.eventStart.getTime() < new Date().getTime())
 }
 
 ;(async () => {
@@ -27,17 +61,10 @@ if (!SLACK_CHANNEL_ID || !SLACK_BOT_TOKEN) {
 
     let slackMessage
     // Send events we're interested in to Slack
-    if (ummMessage.messageType === MessageType.ProductionUnavailability) {
-      if (
-        ummMessage.productionUnits?.some((unit) => unit.areaName === 'FI') ||
-        ummMessage.generationUnits?.some((unit) => unit.areaName === 'FI')
-      ) {
-        slackMessage = createProductionUnavailabilityMessage(ummMessage)
-      }
-    } else if (ummMessage.messageType === MessageType.TransmissionUnavailability) {
-      if (ummMessage.transmissionUnits?.some((unit) => unit.inAreaName === 'FI' || unit.outAreaName === 'FI')) {
-        slackMessage = createTransmissionUnavailabilityMessage(ummMessage)
-      }
+    if (isInterestingProductionUnavailabilityMessage(ummMessage)) {
+      slackMessage = createProductionUnavailabilityMessage(ummMessage)
+    } else if (isInterestingTransmissionUnavailabilityMessage(ummMessage)) {
+      slackMessage = createTransmissionUnavailabilityMessage(ummMessage)
     }
 
     if (slackMessage) {

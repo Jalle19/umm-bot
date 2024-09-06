@@ -24,6 +24,16 @@ export const getBestTimePeriod = (timePeriods: TimePeriod[]): TimePeriod | undef
   return timePeriods.find((timePeriod) => timePeriod.eventStop.getTime() > new Date().getTime())
 }
 
+export const getProductionUnavailabilityUnits = (message: Message): ProductionUnit[] | GenerationUnit[] => {
+  if (message.productionUnits) {
+    return message.productionUnits
+  } else if (message.generationUnits) {
+    return message.generationUnits
+  }
+
+  return []
+}
+
 export const getProductionUnitName = (unit: ProductionUnit | GenerationUnit): string => {
   if ((unit as GenerationUnit).productionUnitName) {
     const generationUnit = unit as GenerationUnit
