@@ -1,0 +1,42 @@
+{
+  "messageType": 2,
+  "isOutdated": false,
+  "unavailabilityType": 2,
+  "reasonCode": 2,
+  "unavailabilityReason": "Maintenance.",
+  "remarks": "",
+  "consumptionUnits": [
+    {
+      "name": "Rauma Paper Mill / PM",
+      "eic": "44W-K-PJ-000003E",
+      "areaEic": "10YFI-1--------U",
+      "areaName": "FI",
+      "installedCapacity": 260,
+      "timePeriods": [
+        {
+          "unavailableCapacity": 108,
+          "availableCapacity": 152,
+          "eventStart": "2024-09-08T07:30:00Z",
+          "eventStop": "2024-09-08T10:00:00Z"
+        }
+      ]
+    }
+  ],
+  "marketParticipants": [
+    {
+      "name": "UPM Communication Papers Oy",
+      "code": "A00120835.FI",
+      "acerCode": "A00120835.FI",
+      "eicCode": "44X-00000000011E"
+    }
+  ],
+  "eventStatus": 1,
+  "messageId": "53fc6d59-6b66-4536-9a0e-20435f941f95",
+  "version": 1,
+  "publicationDate": "2024-09-08T07:18:53.188377Z",
+  "publisherId": "N02073",
+  "publisherName": "UPM Energy Oy",
+  "acerRssMessageIds": [
+    "EUIMSG-PPRSILFPF11WYLBKVD_001"
+  ]
+}

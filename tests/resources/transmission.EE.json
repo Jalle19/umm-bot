@@ -1,0 +1,656 @@
+{
+  "messageType": 3,
+  "isOutdated": false,
+  "unavailabilityType": 2,
+  "reasonCode": 2,
+  "unavailabilityReason": "Capacities are calculated according to the \"Terms, Conditions and Methodologies on Cross-Zonal Capacity Calculation, Provision and Allocation within the Baltic States and with the 3rd Countries.\" that considers limitations due to outages and allowed power line ratings.",
+  "remarks": "Coordinated capacities for L354, L353 renovation works + L346 Sopi-Paide L310[LV] Rezekne - Liksna. Updated end time. L309[LV] Rezekne - Velikoretskaja maintenance cancelled. ",
+  "transmissionUnits": [
+    {
+      "name": "EE → LV",
+      "inAreaEic": "10Y1001A1001A39I",
+      "inAreaName": "EE",
+      "outAreaEic": "10YLV-1001A00074",
+      "outAreaName": "LV",
+      "installedCapacity": 1447,
+      "timePeriods": [
+        {
+          "unavailableCapacity": 767,
+          "availableCapacity": 680,
+          "eventStart": "2024-08-26T05:00:00Z",
+          "eventStop": "2024-08-26T06:00:00Z"
+        },
+        {
+          "unavailableCapacity": 777,
+          "availableCapacity": 670,
+          "eventStart": "2024-08-26T06:00:00Z",
+          "eventStop": "2024-08-26T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 767,
+          "availableCapacity": 680,
+          "eventStart": "2024-08-26T15:00:00Z",
+          "eventStop": "2024-08-27T06:00:00Z"
+        },
+        {
+          "unavailableCapacity": 777,
+          "availableCapacity": 670,
+          "eventStart": "2024-08-27T06:00:00Z",
+          "eventStop": "2024-08-27T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 767,
+          "availableCapacity": 680,
+          "eventStart": "2024-08-27T15:00:00Z",
+          "eventStop": "2024-08-28T06:00:00Z"
+        },
+        {
+          "unavailableCapacity": 777,
+          "availableCapacity": 670,
+          "eventStart": "2024-08-28T06:00:00Z",
+          "eventStop": "2024-08-28T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 767,
+          "availableCapacity": 680,
+          "eventStart": "2024-08-28T15:00:00Z",
+          "eventStop": "2024-08-29T06:00:00Z"
+        },
+        {
+          "unavailableCapacity": 777,
+          "availableCapacity": 670,
+          "eventStart": "2024-08-29T06:00:00Z",
+          "eventStop": "2024-08-29T09:00:00Z"
+        },
+        {
+          "unavailableCapacity": 957,
+          "availableCapacity": 490,
+          "eventStart": "2024-08-29T09:00:00Z",
+          "eventStop": "2024-08-29T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 777,
+          "availableCapacity": 670,
+          "eventStart": "2024-08-29T15:00:00Z",
+          "eventStop": "2024-08-29T18:00:00Z"
+        },
+        {
+          "unavailableCapacity": 767,
+          "availableCapacity": 680,
+          "eventStart": "2024-08-29T18:00:00Z",
+          "eventStop": "2024-08-30T03:00:00Z"
+        },
+        {
+          "unavailableCapacity": 777,
+          "availableCapacity": 670,
+          "eventStart": "2024-08-30T03:00:00Z",
+          "eventStop": "2024-08-30T06:00:00Z"
+        },
+        {
+          "unavailableCapacity": 957,
+          "availableCapacity": 490,
+          "eventStart": "2024-08-30T06:00:00Z",
+          "eventStop": "2024-08-30T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 777,
+          "availableCapacity": 670,
+          "eventStart": "2024-08-30T15:00:00Z",
+          "eventStop": "2024-08-31T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 767,
+          "availableCapacity": 680,
+          "eventStart": "2024-08-31T15:00:00Z",
+          "eventStop": "2024-09-01T06:00:00Z"
+        },
+        {
+          "unavailableCapacity": 777,
+          "availableCapacity": 670,
+          "eventStart": "2024-09-01T06:00:00Z",
+          "eventStop": "2024-09-01T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 767,
+          "availableCapacity": 680,
+          "eventStart": "2024-09-01T15:00:00Z",
+          "eventStop": "2024-09-02T06:00:00Z"
+        },
+        {
+          "unavailableCapacity": 777,
+          "availableCapacity": 670,
+          "eventStart": "2024-09-02T06:00:00Z",
+          "eventStop": "2024-09-02T18:00:00Z"
+        },
+        {
+          "unavailableCapacity": 767,
+          "availableCapacity": 680,
+          "eventStart": "2024-09-02T18:00:00Z",
+          "eventStop": "2024-09-03T06:00:00Z"
+        },
+        {
+          "unavailableCapacity": 777,
+          "availableCapacity": 670,
+          "eventStart": "2024-09-03T06:00:00Z",
+          "eventStop": "2024-09-03T09:00:00Z"
+        },
+        {
+          "unavailableCapacity": 957,
+          "availableCapacity": 490,
+          "eventStart": "2024-09-03T09:00:00Z",
+          "eventStop": "2024-09-03T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 777,
+          "availableCapacity": 670,
+          "eventStart": "2024-09-03T15:00:00Z",
+          "eventStop": "2024-09-03T18:00:00Z"
+        },
+        {
+          "unavailableCapacity": 767,
+          "availableCapacity": 680,
+          "eventStart": "2024-09-03T18:00:00Z",
+          "eventStop": "2024-09-04T03:00:00Z"
+        },
+        {
+          "unavailableCapacity": 777,
+          "availableCapacity": 670,
+          "eventStart": "2024-09-04T03:00:00Z",
+          "eventStop": "2024-09-04T06:00:00Z"
+        },
+        {
+          "unavailableCapacity": 957,
+          "availableCapacity": 490,
+          "eventStart": "2024-09-04T06:00:00Z",
+          "eventStop": "2024-09-04T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 777,
+          "availableCapacity": 670,
+          "eventStart": "2024-09-04T15:00:00Z",
+          "eventStop": "2024-09-04T18:00:00Z"
+        },
+        {
+          "unavailableCapacity": 767,
+          "availableCapacity": 680,
+          "eventStart": "2024-09-04T18:00:00Z",
+          "eventStop": "2024-09-04T22:00:00Z"
+        },
+        {
+          "unavailableCapacity": 775,
+          "availableCapacity": 672,
+          "eventStart": "2024-09-04T22:00:00Z",
+          "eventStop": "2024-09-05T03:00:00Z"
+        },
+        {
+          "unavailableCapacity": 777,
+          "availableCapacity": 670,
+          "eventStart": "2024-09-05T03:00:00Z",
+          "eventStop": "2024-09-05T09:00:00Z"
+        },
+        {
+          "unavailableCapacity": 957,
+          "availableCapacity": 490,
+          "eventStart": "2024-09-05T09:00:00Z",
+          "eventStop": "2024-09-05T12:00:00Z"
+        },
+        {
+          "unavailableCapacity": 777,
+          "availableCapacity": 670,
+          "eventStart": "2024-09-05T12:00:00Z",
+          "eventStop": "2024-09-05T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 775,
+          "availableCapacity": 672,
+          "eventStart": "2024-09-05T15:00:00Z",
+          "eventStop": "2024-09-05T22:00:00Z"
+        },
+        {
+          "unavailableCapacity": 767,
+          "availableCapacity": 680,
+          "eventStart": "2024-09-05T22:00:00Z",
+          "eventStop": "2024-09-06T06:00:00Z"
+        },
+        {
+          "unavailableCapacity": 777,
+          "availableCapacity": 670,
+          "eventStart": "2024-09-06T06:00:00Z",
+          "eventStop": "2024-09-06T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 767,
+          "availableCapacity": 680,
+          "eventStart": "2024-09-06T15:00:00Z",
+          "eventStop": "2024-09-07T06:00:00Z"
+        },
+        {
+          "unavailableCapacity": 777,
+          "availableCapacity": 670,
+          "eventStart": "2024-09-07T06:00:00Z",
+          "eventStop": "2024-09-07T09:00:00Z"
+        },
+        {
+          "unavailableCapacity": 957,
+          "availableCapacity": 490,
+          "eventStart": "2024-09-07T09:00:00Z",
+          "eventStop": "2024-09-07T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 777,
+          "availableCapacity": 670,
+          "eventStart": "2024-09-07T15:00:00Z",
+          "eventStop": "2024-09-07T18:00:00Z"
+        },
+        {
+          "unavailableCapacity": 767,
+          "availableCapacity": 680,
+          "eventStart": "2024-09-07T18:00:00Z",
+          "eventStop": "2024-09-08T06:00:00Z"
+        },
+        {
+          "unavailableCapacity": 777,
+          "availableCapacity": 670,
+          "eventStart": "2024-09-08T06:00:00Z",
+          "eventStop": "2024-09-08T09:00:00Z"
+        },
+        {
+          "unavailableCapacity": 957,
+          "availableCapacity": 490,
+          "eventStart": "2024-09-08T09:00:00Z",
+          "eventStop": "2024-09-08T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 767,
+          "availableCapacity": 680,
+          "eventStart": "2024-09-08T15:00:00Z",
+          "eventStop": "2024-09-09T06:00:00Z"
+        },
+        {
+          "unavailableCapacity": 957,
+          "availableCapacity": 490,
+          "eventStart": "2024-09-09T06:00:00Z",
+          "eventStop": "2024-09-09T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 777,
+          "availableCapacity": 670,
+          "eventStart": "2024-09-09T15:00:00Z",
+          "eventStop": "2024-09-09T18:00:00Z"
+        },
+        {
+          "unavailableCapacity": 767,
+          "availableCapacity": 680,
+          "eventStart": "2024-09-09T18:00:00Z",
+          "eventStop": "2024-09-10T03:00:00Z"
+        },
+        {
+          "unavailableCapacity": 777,
+          "availableCapacity": 670,
+          "eventStart": "2024-09-10T03:00:00Z",
+          "eventStop": "2024-09-10T09:00:00Z"
+        },
+        {
+          "unavailableCapacity": 957,
+          "availableCapacity": 490,
+          "eventStart": "2024-09-10T09:00:00Z",
+          "eventStop": "2024-09-10T12:00:00Z"
+        },
+        {
+          "unavailableCapacity": 777,
+          "availableCapacity": 670,
+          "eventStart": "2024-09-10T12:00:00Z",
+          "eventStop": "2024-09-10T18:00:00Z"
+        },
+        {
+          "unavailableCapacity": 767,
+          "availableCapacity": 680,
+          "eventStart": "2024-09-10T18:00:00Z",
+          "eventStop": "2024-09-10T22:00:00Z"
+        },
+        {
+          "unavailableCapacity": 867,
+          "availableCapacity": 580,
+          "eventStart": "2024-09-10T22:00:00Z",
+          "eventStop": "2024-09-11T14:00:00Z"
+        }
+      ]
+    },
+    {
+      "name": "LV → EE",
+      "inAreaEic": "10YLV-1001A00074",
+      "inAreaName": "LV",
+      "outAreaEic": "10Y1001A1001A39I",
+      "outAreaName": "EE",
+      "installedCapacity": 1259,
+      "timePeriods": [
+        {
+          "unavailableCapacity": 540,
+          "availableCapacity": 719,
+          "eventStart": "2024-08-26T05:00:00Z",
+          "eventStop": "2024-08-26T06:00:00Z"
+        },
+        {
+          "unavailableCapacity": 599,
+          "availableCapacity": 660,
+          "eventStart": "2024-08-26T06:00:00Z",
+          "eventStop": "2024-08-26T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 540,
+          "availableCapacity": 719,
+          "eventStart": "2024-08-26T15:00:00Z",
+          "eventStop": "2024-08-27T06:00:00Z"
+        },
+        {
+          "unavailableCapacity": 599,
+          "availableCapacity": 660,
+          "eventStart": "2024-08-27T06:00:00Z",
+          "eventStop": "2024-08-27T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 540,
+          "availableCapacity": 719,
+          "eventStart": "2024-08-27T15:00:00Z",
+          "eventStop": "2024-08-28T06:00:00Z"
+        },
+        {
+          "unavailableCapacity": 599,
+          "availableCapacity": 660,
+          "eventStart": "2024-08-28T06:00:00Z",
+          "eventStop": "2024-08-28T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 540,
+          "availableCapacity": 719,
+          "eventStart": "2024-08-28T15:00:00Z",
+          "eventStop": "2024-08-29T06:00:00Z"
+        },
+        {
+          "unavailableCapacity": 599,
+          "availableCapacity": 660,
+          "eventStart": "2024-08-29T06:00:00Z",
+          "eventStop": "2024-08-29T09:00:00Z"
+        },
+        {
+          "unavailableCapacity": 779,
+          "availableCapacity": 480,
+          "eventStart": "2024-08-29T09:00:00Z",
+          "eventStop": "2024-08-29T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 599,
+          "availableCapacity": 660,
+          "eventStart": "2024-08-29T15:00:00Z",
+          "eventStop": "2024-08-29T18:00:00Z"
+        },
+        {
+          "unavailableCapacity": 540,
+          "availableCapacity": 719,
+          "eventStart": "2024-08-29T18:00:00Z",
+          "eventStop": "2024-08-30T03:00:00Z"
+        },
+        {
+          "unavailableCapacity": 599,
+          "availableCapacity": 660,
+          "eventStart": "2024-08-30T03:00:00Z",
+          "eventStop": "2024-08-30T06:00:00Z"
+        },
+        {
+          "unavailableCapacity": 779,
+          "availableCapacity": 480,
+          "eventStart": "2024-08-30T06:00:00Z",
+          "eventStop": "2024-08-30T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 599,
+          "availableCapacity": 660,
+          "eventStart": "2024-08-30T15:00:00Z",
+          "eventStop": "2024-08-31T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 540,
+          "availableCapacity": 719,
+          "eventStart": "2024-08-31T15:00:00Z",
+          "eventStop": "2024-09-01T06:00:00Z"
+        },
+        {
+          "unavailableCapacity": 599,
+          "availableCapacity": 660,
+          "eventStart": "2024-09-01T06:00:00Z",
+          "eventStop": "2024-09-01T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 540,
+          "availableCapacity": 719,
+          "eventStart": "2024-09-01T15:00:00Z",
+          "eventStop": "2024-09-02T06:00:00Z"
+        },
+        {
+          "unavailableCapacity": 599,
+          "availableCapacity": 660,
+          "eventStart": "2024-09-02T06:00:00Z",
+          "eventStop": "2024-09-02T18:00:00Z"
+        },
+        {
+          "unavailableCapacity": 540,
+          "availableCapacity": 719,
+          "eventStart": "2024-09-02T18:00:00Z",
+          "eventStop": "2024-09-03T06:00:00Z"
+        },
+        {
+          "unavailableCapacity": 599,
+          "availableCapacity": 660,
+          "eventStart": "2024-09-03T06:00:00Z",
+          "eventStop": "2024-09-03T09:00:00Z"
+        },
+        {
+          "unavailableCapacity": 779,
+          "availableCapacity": 480,
+          "eventStart": "2024-09-03T09:00:00Z",
+          "eventStop": "2024-09-03T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 599,
+          "availableCapacity": 660,
+          "eventStart": "2024-09-03T15:00:00Z",
+          "eventStop": "2024-09-03T18:00:00Z"
+        },
+        {
+          "unavailableCapacity": 540,
+          "availableCapacity": 719,
+          "eventStart": "2024-09-03T18:00:00Z",
+          "eventStop": "2024-09-04T03:00:00Z"
+        },
+        {
+          "unavailableCapacity": 599,
+          "availableCapacity": 660,
+          "eventStart": "2024-09-04T03:00:00Z",
+          "eventStop": "2024-09-04T06:00:00Z"
+        },
+        {
+          "unavailableCapacity": 779,
+          "availableCapacity": 480,
+          "eventStart": "2024-09-04T06:00:00Z",
+          "eventStop": "2024-09-04T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 599,
+          "availableCapacity": 660,
+          "eventStart": "2024-09-04T15:00:00Z",
+          "eventStop": "2024-09-04T18:00:00Z"
+        },
+        {
+          "unavailableCapacity": 540,
+          "availableCapacity": 719,
+          "eventStart": "2024-09-04T18:00:00Z",
+          "eventStop": "2024-09-05T03:00:00Z"
+        },
+        {
+          "unavailableCapacity": 599,
+          "availableCapacity": 660,
+          "eventStart": "2024-09-05T03:00:00Z",
+          "eventStop": "2024-09-05T09:00:00Z"
+        },
+        {
+          "unavailableCapacity": 779,
+          "availableCapacity": 480,
+          "eventStart": "2024-09-05T09:00:00Z",
+          "eventStop": "2024-09-05T12:00:00Z"
+        },
+        {
+          "unavailableCapacity": 599,
+          "availableCapacity": 660,
+          "eventStart": "2024-09-05T12:00:00Z",
+          "eventStop": "2024-09-05T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 540,
+          "availableCapacity": 719,
+          "eventStart": "2024-09-05T15:00:00Z",
+          "eventStop": "2024-09-06T06:00:00Z"
+        },
+        {
+          "unavailableCapacity": 599,
+          "availableCapacity": 660,
+          "eventStart": "2024-09-06T06:00:00Z",
+          "eventStop": "2024-09-06T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 540,
+          "availableCapacity": 719,
+          "eventStart": "2024-09-06T15:00:00Z",
+          "eventStop": "2024-09-07T06:00:00Z"
+        },
+        {
+          "unavailableCapacity": 599,
+          "availableCapacity": 660,
+          "eventStart": "2024-09-07T06:00:00Z",
+          "eventStop": "2024-09-07T09:00:00Z"
+        },
+        {
+          "unavailableCapacity": 779,
+          "availableCapacity": 480,
+          "eventStart": "2024-09-07T09:00:00Z",
+          "eventStop": "2024-09-07T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 599,
+          "availableCapacity": 660,
+          "eventStart": "2024-09-07T15:00:00Z",
+          "eventStop": "2024-09-07T18:00:00Z"
+        },
+        {
+          "unavailableCapacity": 540,
+          "availableCapacity": 719,
+          "eventStart": "2024-09-07T18:00:00Z",
+          "eventStop": "2024-09-08T06:00:00Z"
+        },
+        {
+          "unavailableCapacity": 599,
+          "availableCapacity": 660,
+          "eventStart": "2024-09-08T06:00:00Z",
+          "eventStop": "2024-09-08T09:00:00Z"
+        },
+        {
+          "unavailableCapacity": 779,
+          "availableCapacity": 480,
+          "eventStart": "2024-09-08T09:00:00Z",
+          "eventStop": "2024-09-08T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 540,
+          "availableCapacity": 719,
+          "eventStart": "2024-09-08T15:00:00Z",
+          "eventStop": "2024-09-09T06:00:00Z"
+        },
+        {
+          "unavailableCapacity": 779,
+          "availableCapacity": 480,
+          "eventStart": "2024-09-09T06:00:00Z",
+          "eventStop": "2024-09-09T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 599,
+          "availableCapacity": 660,
+          "eventStart": "2024-09-09T15:00:00Z",
+          "eventStop": "2024-09-09T18:00:00Z"
+        },
+        {
+          "unavailableCapacity": 540,
+          "availableCapacity": 719,
+          "eventStart": "2024-09-09T18:00:00Z",
+          "eventStop": "2024-09-10T03:00:00Z"
+        },
+        {
+          "unavailableCapacity": 599,
+          "availableCapacity": 660,
+          "eventStart": "2024-09-10T03:00:00Z",
+          "eventStop": "2024-09-10T09:00:00Z"
+        },
+        {
+          "unavailableCapacity": 779,
+          "availableCapacity": 480,
+          "eventStart": "2024-09-10T09:00:00Z",
+          "eventStop": "2024-09-10T12:00:00Z"
+        },
+        {
+          "unavailableCapacity": 599,
+          "availableCapacity": 660,
+          "eventStart": "2024-09-10T12:00:00Z",
+          "eventStop": "2024-09-10T18:00:00Z"
+        },
+        {
+          "unavailableCapacity": 540,
+          "availableCapacity": 719,
+          "eventStart": "2024-09-10T18:00:00Z",
+          "eventStop": "2024-09-10T22:00:00Z"
+        },
+        {
+          "unavailableCapacity": 640,
+          "availableCapacity": 619,
+          "eventStart": "2024-09-10T22:00:00Z",
+          "eventStop": "2024-09-11T14:00:00Z"
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "name": "L346 Sopi - Paide",
+      "code": "38T-L346-------K"
+    },
+    {
+      "name": "Tsirguliina-Valmiera (LV)",
+      "code": "10T-EE-LV-00002T"
+    },
+    {
+      "name": "Tsirguliina-Viru",
+      "code": "38T-L353-------0"
+    }
+  ],
+  "marketParticipants": [
+    {
+      "name": "Elering",
+      "code": "A0002679T.EE",
+      "acerCode": "A0002679T.EE",
+      "eicCode": "10X1001A1001A39W"
+    },
+    {
+      "name": "Augstsprieguma tīkls AS",
+      "code": "A00003448.LV",
+      "acerCode": "A00003448.LV",
+      "eicCode": "10X1001A1001B54W"
+    }
+  ],
+  "eventStatus": 1,
+  "messageId": "17d641ae-c57e-41aa-b92f-d2edcd06e853",
+  "version": 37,
+  "publicationDate": "2024-09-08T12:51:24.710263Z",
+  "publisherId": "N00235",
+  "publisherName": "Elering AS",
+  "acerRssMessageIds": [
+    "EUIMSG-HP1WDPCARFQ3IWMQAE_037",
+    "EUIMSG-M1X1VELAENFRF7L8K8_037"
+  ]
+}

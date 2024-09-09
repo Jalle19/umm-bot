@@ -1,0 +1,67 @@
+{
+  "messageType": 2,
+  "isOutdated": false,
+  "unavailabilityType": 2,
+  "reasonCode": 2,
+  "unavailabilityReason": "Planned testing",
+  "remarks": "Planned testing",
+  "consumptionUnits": [
+    {
+      "name": "Kollsnes",
+      "eic": "50WC00000002016V",
+      "areaEic": "10Y1001A1001A48H",
+      "areaName": "NO5",
+      "installedCapacity": 290,
+      "timePeriods": [
+        {
+          "unavailableCapacity": 140,
+          "availableCapacity": 150,
+          "eventStart": "2024-09-02T04:00:00Z",
+          "eventStop": "2024-09-03T10:00:00Z"
+        },
+        {
+          "unavailableCapacity": 140,
+          "availableCapacity": 150,
+          "eventStart": "2024-09-03T10:00:00Z",
+          "eventStop": "2024-09-05T01:00:00Z"
+        },
+        {
+          "unavailableCapacity": 120,
+          "availableCapacity": 170,
+          "eventStart": "2024-09-05T01:00:00Z",
+          "eventStop": "2024-09-05T22:00:00Z"
+        },
+        {
+          "unavailableCapacity": 130,
+          "availableCapacity": 160,
+          "eventStart": "2024-09-05T22:00:00Z",
+          "eventStop": "2024-09-07T04:00:00Z"
+        },
+        {
+          "unavailableCapacity": 130,
+          "availableCapacity": 160,
+          "eventStart": "2024-09-07T04:00:00Z",
+          "eventStop": "2024-09-08T06:00:00Z"
+        },
+        {
+          "unavailableCapacity": 115,
+          "availableCapacity": 175,
+          "eventStart": "2024-09-08T06:00:00Z",
+          "eventStop": "2024-09-08T09:00:00Z"
+        },
+        {
+          "unavailableCapacity": 120,
+          "availableCapacity": 170,
+          "eventStart": "2024-09-08T09:00:00Z",
+          "eventStop": "2024-09-10T04:00:00Z"
+        }
+      ]
+    }
+  ],
+  "eventStatus": 1,
+  "messageId": "ff478dd5-c2d4-4642-b1f1-e23a2b86194e",
+  "version": 9,
+  "publicationDate": "2024-09-08T09:53:49.810338Z",
+  "publisherId": "N02342",
+  "publisherName": "Gassco AS"
+}
