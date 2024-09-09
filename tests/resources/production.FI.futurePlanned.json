@@ -1,0 +1,74 @@
+{
+  "messageType": 1,
+  "isOutdated": false,
+  "unavailabilityType": 2,
+  "reasonCode": 2,
+  "unavailabilityReason": "Yearly maintenance",
+  "remarks": "Updated schedule",
+  "generationUnits": [
+    {
+      "productionUnitName": "Olkiluoto 3",
+      "productionUnitEic": "44W-T-YV-0000042",
+      "productionUnitInstalledCapacity": 1600,
+      "areaEic": "10YFI-1--------U",
+      "areaName": "FI",
+      "fuelType": 14,
+      "name": "B3",
+      "eic": "44W-T-YV-100007Q",
+      "installedCapacity": 1600,
+      "timePeriods": [
+        {
+          "unavailableCapacity": 1600,
+          "availableCapacity": 0,
+          "eventStart": "2035-03-01T14:00:00Z",
+          "eventStop": "2035-04-25T13:00:00Z"
+        }
+      ]
+    }
+  ],
+  "marketParticipants": [
+    {
+      "name": "Teollisuuden Voima Oyj",
+      "code": "A0000644Z.FI",
+      "acerCode": "A0000644Z.FI",
+      "eicCode": "44X-00000000143Y",
+      "leiCode": "743700LQ48IZBTZN4S52"
+    },
+    {
+      "name": "EPV Energia Oy",
+      "code": "A00012272.FI",
+      "acerCode": "A00012272.FI",
+      "eicCode": "44X-000000002035",
+      "leiCode": "743700M6MLWXYECY5N58"
+    },
+    {
+      "name": "Fortum Power and Heat Oy",
+      "code": "A0001899F.FI",
+      "acerCode": "A0001899F.FI",
+      "eicCode": "23XFORTUMPOWER-W",
+      "leiCode": "6354008VHNYEWM9XM160"
+    },
+    {
+      "name": "Oy Mankala Ab",
+      "code": "A00014129.FI",
+      "acerCode": "A00014129.FI",
+      "eicCode": "44X-00000000189A",
+      "leiCode": "743700FCFDFKOW98AL06"
+    },
+    {
+      "name": "Pohjolan Voima Oyj",
+      "code": "A00000269.FI",
+      "acerCode": "A00000269.FI",
+      "leiCode": "743700X6KUJ0Z8GJIF03"
+    }
+  ],
+  "eventStatus": 1,
+  "messageId": "f5ab1a56-8af0-4b90-9070-b0bd587c5368",
+  "version": 6,
+  "publicationDate": "2024-09-06T10:16:23.018751Z",
+  "publisherId": "N02993",
+  "publisherName": "PD Power Oy",
+  "acerRssMessageIds": [
+    "EUIMSG-0YKX5OGHTGLUCSM2BX_006"
+  ]
+}

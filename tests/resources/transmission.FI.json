@@ -1,0 +1,102 @@
+{
+  "messageType": 3,
+  "isOutdated": false,
+  "unavailabilityType": 2,
+  "reasonCode": 2,
+  "eventStart": "2024-09-01T05:00:00Z",
+  "eventStop": "2024-09-08T17:00:00Z",
+  "unavailabilityReason": "Foreseen maintenance",
+  "remarks": "Interval times updated for corridors FI>SE3 and SE3>SE3LS.\nSE2>SE3 can vary between 5200-5500 MW. SE3>SE4 can vary between 3400-4000 MW.\nSE3>SE3LS can vary between 300-500 MW.",
+  "transmissionUnits": [
+    {
+      "name": "SE2 → SE3",
+      "inAreaEic": "10Y1001A1001A45N",
+      "inAreaName": "SE2",
+      "outAreaEic": "10Y1001A1001A46L",
+      "outAreaName": "SE3",
+      "installedCapacity": 7300,
+      "timePeriods": [
+        {
+          "unavailableCapacity": 2000,
+          "availableCapacity": 5300,
+          "eventStart": "2024-09-01T05:00:00Z",
+          "eventStop": "2024-09-08T17:00:00Z"
+        }
+      ]
+    },
+    {
+      "name": "SE3 → SE3LS",
+      "inAreaEic": "10Y1001A1001A46L",
+      "inAreaName": "SE3",
+      "outAreaEic": "46Y000000000007M",
+      "outAreaName": "SE3LS",
+      "installedCapacity": 2810,
+      "timePeriods": [
+        {
+          "unavailableCapacity": 2510,
+          "availableCapacity": 300,
+          "eventStart": "2024-09-01T05:00:00Z",
+          "eventStop": "2024-09-08T17:00:00Z"
+        }
+      ]
+    },
+    {
+      "name": "FI → SE3",
+      "inAreaEic": "10YFI-1--------U",
+      "inAreaName": "FI",
+      "outAreaEic": "10Y1001A1001A46L",
+      "outAreaName": "SE3",
+      "installedCapacity": 1200,
+      "timePeriods": [
+        {
+          "unavailableCapacity": 1200,
+          "availableCapacity": 0,
+          "eventStart": "2024-09-01T05:00:00Z",
+          "eventStop": "2024-09-08T17:00:00Z"
+        }
+      ]
+    },
+    {
+      "name": "SE3 → SE4",
+      "inAreaEic": "10Y1001A1001A46L",
+      "inAreaName": "SE3",
+      "outAreaEic": "10Y1001A1001A47J",
+      "outAreaName": "SE4",
+      "installedCapacity": 6200,
+      "timePeriods": [
+        {
+          "unavailableCapacity": 2700,
+          "availableCapacity": 3500,
+          "eventStart": "2024-09-01T05:00:00Z",
+          "eventStop": "2024-09-08T17:00:00Z"
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "name": "Hall-Hedenlunda",
+      "code": "46TAC0000000058N"
+    }
+  ],
+  "marketParticipants": [
+    {
+      "name": "NUCS",
+      "code": "10V1001C--000187",
+      "acerCode": "000000000.00",
+      "eicCode": "10V1001C--000187"
+    },
+    {
+      "name": "Affärsverket svenska kraftnät",
+      "code": "10X1001A1001A418",
+      "acerCode": "A00000355.SE",
+      "eicCode": "10X1001A1001A418"
+    }
+  ],
+  "eventStatus": 1,
+  "messageId": "005921bb-0869-4ecd-9751-bfcc09c16fe6",
+  "version": 11,
+  "publicationDate": "2024-09-07T12:04:55Z",
+  "publisherId": "N00643",
+  "publisherName": "Svenska kraftnät"
+}

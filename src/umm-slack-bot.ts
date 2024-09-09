@@ -1,9 +1,12 @@
 import { SignalrClient } from './signalr/client'
 import { parsePushMessage } from './umm/parser'
 import { UmmClient } from './umm/client'
-import { MessageType } from './umm/types'
 import { WebClient } from '@slack/web-api'
 import { createProductionUnavailabilityMessage, createTransmissionUnavailabilityMessage } from './slack/messageFactory'
+import {
+  isInterestingProductionUnavailabilityMessage,
+  isInterestingTransmissionUnavailabilityMessage,
+} from './slack/classifier'
 
 // Verify we have what we need
 const SLACK_CHANNEL_ID = process.env.SLACK_CHANNEL_ID as string | undefined
@@ -27,17 +30,12 @@ if (!SLACK_CHANNEL_ID || !SLACK_BOT_TOKEN) {
 
     let slackMessage
     // Send events we're interested in to Slack
-    if (ummMessage.messageType === MessageType.ProductionUnavailability) {
-      if (
-        ummMessage.productionUnits?.some((unit) => unit.areaName === 'FI') ||
-        ummMessage.generationUnits?.some((unit) => unit.areaName === 'FI')
-      ) {
-        slackMessage = createProductionUnavailabilityMessage(ummMessage)
-      }
-    } else if (ummMessage.messageType === MessageType.TransmissionUnavailability) {
-      if (ummMessage.transmissionUnits?.some((unit) => unit.inAreaName === 'FI' || unit.outAreaName === 'FI')) {
-        slackMessage = createTransmissionUnavailabilityMessage(ummMessage)
-      }
+    if (isInterestingProductionUnavailabilityMessage(ummMessage)) {
+      slackMessage = createProductionUnavailabilityMessage(ummMessage)
+    } else if (isInterestingTransmissionUnavailabilityMessage(ummMessage)) {
+      slackMessage = createTransmissionUnavailabilityMessage(ummMessage)
+    } else {
+      console.log(`Message ${ummMessage.messageId} version ${ummMessage.version} deemed uninteresting`)
     }
 
     if (slackMessage) {
