@@ -13,10 +13,16 @@ const readAndParseResource = (resource: string): Message => {
   return parseMessage(raw.toString('utf8'))
 }
 
-it('treats Finnish transmission outage as interesting', () => {
-  const message = readAndParseResource('tests/resources/transmission.FI.json')
+it('treats Finnish unplanned transmission outage as interesting', () => {
+  const message = readAndParseResource('tests/resources/transmission.FI.unplanned.json')
 
   expect(isInterestingTransmissionUnavailabilityMessage(message)).toEqual(true)
+})
+
+it('treats Finnish planned transmission outage as uninteresting', () => {
+  const message = readAndParseResource('tests/resources/transmission.FI.json')
+
+  expect(isInterestingTransmissionUnavailabilityMessage(message)).toEqual(false)
 })
 
 it('treats non-Finnish transmission outage as uninteresting', () => {

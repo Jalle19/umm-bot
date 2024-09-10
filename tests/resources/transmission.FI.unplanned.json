@@ -1,0 +1,106 @@
+{
+  "messageType": 3,
+  "isOutdated": false,
+  "unavailabilityType": 1,
+  "reasonCode": 1,
+  "eventStart": "2024-01-25T22:10:00Z",
+  "eventStop": "2024-09-03T22:00:00Z",
+  "unavailabilityReason": "Failure in the cable system in Estonian shoreline. End time has been updated.",
+  "remarks": "Estlink 2 cable failure has been repaired.",
+  "transmissionUnits": [
+    {
+      "name": "FI → EE",
+      "inAreaEic": "10YFI-1--------U",
+      "inAreaName": "FI",
+      "outAreaEic": "10Y1001A1001A39I",
+      "outAreaName": "EE",
+      "installedCapacity": 1016,
+      "timePeriods": [
+        {
+          "unavailableCapacity": 658,
+          "availableCapacity": 358,
+          "eventStart": "2024-01-25T22:10:00Z",
+          "eventStop": "2024-01-25T22:15:00Z"
+        },
+        {
+          "unavailableCapacity": 658,
+          "availableCapacity": 358,
+          "eventStart": "2024-01-25T22:15:00Z",
+          "eventStop": "2024-01-25T22:30:00Z"
+        },
+        {
+          "unavailableCapacity": 658,
+          "availableCapacity": 358,
+          "eventStart": "2024-01-25T22:30:00Z",
+          "eventStop": "2024-01-25T23:00:00Z"
+        },
+        {
+          "unavailableCapacity": 658,
+          "availableCapacity": 358,
+          "eventStart": "2024-01-25T23:00:00Z",
+          "eventStop": "2024-09-03T22:00:00Z"
+        }
+      ]
+    },
+    {
+      "name": "EE → FI",
+      "inAreaEic": "10Y1001A1001A39I",
+      "inAreaName": "EE",
+      "outAreaEic": "10YFI-1--------U",
+      "outAreaName": "FI",
+      "installedCapacity": 1016,
+      "timePeriods": [
+        {
+          "unavailableCapacity": 658,
+          "availableCapacity": 358,
+          "eventStart": "2024-01-25T22:10:00Z",
+          "eventStop": "2024-01-25T22:15:00Z"
+        },
+        {
+          "unavailableCapacity": 658,
+          "availableCapacity": 358,
+          "eventStart": "2024-01-25T22:15:00Z",
+          "eventStop": "2024-01-25T22:30:00Z"
+        },
+        {
+          "unavailableCapacity": 658,
+          "availableCapacity": 358,
+          "eventStart": "2024-01-25T22:30:00Z",
+          "eventStop": "2024-01-25T23:00:00Z"
+        },
+        {
+          "unavailableCapacity": 658,
+          "availableCapacity": 358,
+          "eventStart": "2024-01-25T23:00:00Z",
+          "eventStop": "2024-09-03T22:00:00Z"
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "name": "Estlink 2",
+      "code": "10T-FI-EE-00002O"
+    }
+  ],
+  "marketParticipants": [
+    {
+      "name": "NUCS",
+      "code": "10V1001C--000187",
+      "acerCode": "000000000.00",
+      "eicCode": "10V1001C--000187"
+    },
+    {
+      "name": "Elering",
+      "code": "10X1001A1001A39W",
+      "acerCode": "A0002679T.EE",
+      "eicCode": "10X1001A1001A39W"
+    }
+  ],
+  "eventStatus": 1,
+  "messageId": "5c32c249-7d74-44f1-809b-d4ad14c0eca7",
+  "version": 10,
+  "publicationDate": "2024-09-03T07:28:01Z",
+  "publisherId": "N01250",
+  "publisherName": "Fingrid Oyj"
+}

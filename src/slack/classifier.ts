@@ -34,15 +34,6 @@ export const isInterestingTransmissionUnavailabilityMessage = (ummMessage: Messa
     return false
   }
 
-  // Planned unavailability needs to start within a week, we're not interested in outages scheduled years in advance
-  if (ummMessage.unavailabilityType === UnavailabilityType.Planned) {
-    const unit = ummMessage.transmissionUnits?.[0]
-    if (!unit) {
-      return false
-    }
-
-    return unit.timePeriods.some((timePeriod) => timePeriod.eventStart.getTime() < new Date().getTime())
-  }
-
-  return true
+  // We're ony interested in unplanned outages
+  return ummMessage.unavailabilityType === UnavailabilityType.Unplanned
 }
