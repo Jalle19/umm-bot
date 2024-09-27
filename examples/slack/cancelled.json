@@ -1,0 +1,21 @@
+{
+  "blocks": [
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": ":relieved: A previously issued message was cancelled. Cancellation reason: _N/A_"
+      }
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "section",
+      "text": {
+        "type": "mrkdwn",
+        "text": "https://umm.nordpoolgroup.com/#/messages/3b2b1643-27cd-40ad-9651-a198fd0246d7/2"
+      }
+    }
+  ]
+}

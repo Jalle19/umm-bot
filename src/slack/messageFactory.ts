@@ -201,3 +201,19 @@ export const createProductionUnavailabilityMessage = (message: Message): AnyBloc
 
   return sections
 }
+
+export const createDismissedMessageMessage = (message: Message): AnyBlock[] => {
+  const cancellationReason = message.cancellationReason ?? 'N/A'
+
+  return [
+    {
+      'type': 'section',
+      'text': {
+        'type': 'mrkdwn',
+        'text': `:relieved: A previously issued message was cancelled. Cancellation reason: _${cancellationReason}_`,
+      },
+    },
+    createDividerSection(),
+    createMoreInfoSection(message),
+  ]
+}

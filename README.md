@@ -23,3 +23,9 @@ Environment="SLACK_BOT_TOKEN="
 
 * https://developers.nordpoolgroup.com/reference/umm-introduction
 * https://developers.nordpoolgroup.com/reference/umm-push-notifications
+
+### Getting details about a particular message
+
+```bash
+curl -X GET --header 'Accept: application/json' 'https://ummapi.nordpoolgroup.com/messages/3b2b1643-27cd-40ad-9651-a198fd0246d7/2'
+```

@@ -1,7 +1,11 @@
 import { UmmClient } from './umm/client'
 import { WebClient } from '@slack/web-api'
-import { MessageType } from './umm/types'
-import { createProductionUnavailabilityMessage, createTransmissionUnavailabilityMessage } from './slack/messageFactory'
+import { EventStatus, MessageType } from './umm/types'
+import {
+  createDismissedMessageMessage,
+  createProductionUnavailabilityMessage,
+  createTransmissionUnavailabilityMessage,
+} from './slack/messageFactory'
 
 // Verify we have what we need
 const SLACK_CHANNEL_ID = process.env.SLACK_CHANNEL_ID as string | undefined
@@ -20,7 +24,9 @@ void (async () => {
   const slackWebClient = new WebClient(SLACK_BOT_TOKEN)
 
   let slackMessage
-  if (message.messageType === MessageType.TransmissionUnavailability) {
+  if (message.eventStatus === EventStatus.Dismissed) {
+    slackMessage = createDismissedMessageMessage(message)
+  } else if (message.messageType === MessageType.TransmissionUnavailability) {
     slackMessage = createTransmissionUnavailabilityMessage(message)
   } else if (message.messageType === MessageType.ProductionUnavailability) {
     slackMessage = createProductionUnavailabilityMessage(message)
