@@ -41,8 +41,8 @@ export enum MessageType {
 }
 
 export enum EventStatus {
-  Unplanned = 1,
-  Planned,
+  Active = 1,
+  Dismissed = 3,
 }
 
 export enum UnavailabilityType {
