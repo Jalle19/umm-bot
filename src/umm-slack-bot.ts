@@ -2,8 +2,13 @@ import { SignalrClient } from './signalr/client'
 import { parsePushMessage } from './umm/parser'
 import { UmmClient } from './umm/client'
 import { WebClient } from '@slack/web-api'
-import { createProductionUnavailabilityMessage, createTransmissionUnavailabilityMessage } from './slack/messageFactory'
 import {
+  createDismissedMessageMessage,
+  createProductionUnavailabilityMessage,
+  createTransmissionUnavailabilityMessage,
+} from './slack/messageFactory'
+import {
+  isDismissedMessage,
   isInterestingProductionUnavailabilityMessage,
   isInterestingTransmissionUnavailabilityMessage,
 } from './slack/classifier'
@@ -30,7 +35,13 @@ if (!SLACK_CHANNEL_ID || !SLACK_BOT_TOKEN) {
 
     let slackMessage
     // Send events we're interested in to Slack
-    if (isInterestingProductionUnavailabilityMessage(ummMessage)) {
+    if (
+      (isInterestingProductionUnavailabilityMessage(ummMessage) ||
+        isInterestingTransmissionUnavailabilityMessage(ummMessage)) &&
+      isDismissedMessage(ummMessage)
+    ) {
+      slackMessage = createDismissedMessageMessage(ummMessage)
+    } else if (isInterestingProductionUnavailabilityMessage(ummMessage)) {
       slackMessage = createProductionUnavailabilityMessage(ummMessage)
     } else if (isInterestingTransmissionUnavailabilityMessage(ummMessage)) {
       slackMessage = createTransmissionUnavailabilityMessage(ummMessage)

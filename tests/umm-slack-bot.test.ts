@@ -2,9 +2,10 @@ import { expect, it } from "@jest/globals";
 import * as fs from "node:fs";
 import { Message } from "../src/umm/types";
 import {
+  isDismissedMessage,
   isInterestingProductionUnavailabilityMessage,
   isInterestingTransmissionUnavailabilityMessage
-} from "../src/slack/classifier";
+} from '../src/slack/classifier'
 import { parseMessage } from "../src/umm/parser";
 
 const readAndParseResource = (resource: string): Message => {
@@ -12,6 +13,12 @@ const readAndParseResource = (resource: string): Message => {
 
   return parseMessage(raw.toString('utf8'))
 }
+
+it('determines that a message is dismissed', () => {
+  const message = readAndParseResource('tests/resources/transmission.cancelled.json')
+
+  expect(isDismissedMessage(message)).toEqual(true)
+})
 
 it('treats Finnish unplanned transmission outage as interesting', () => {
   const message = readAndParseResource('tests/resources/transmission.FI.unplanned.json')

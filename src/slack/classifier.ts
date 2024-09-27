@@ -1,7 +1,11 @@
-import { Message, MessageType, UnavailabilityType } from '../umm/types'
+import { EventStatus, Message, MessageType, UnavailabilityType } from '../umm/types'
 import { getProductionUnavailabilityUnits } from '../umm/parser'
 
 const ONE_WEEK_MS = 86400 * 1000
+
+export const isDismissedMessage = (ummMessage: Message): boolean => {
+  return ummMessage.eventStatus === EventStatus.Dismissed
+}
 
 export const isInterestingProductionUnavailabilityMessage = (ummMessage: Message): boolean => {
   if (ummMessage.messageType !== MessageType.ProductionUnavailability) {

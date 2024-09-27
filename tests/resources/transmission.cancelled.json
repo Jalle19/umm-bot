@@ -1,0 +1,106 @@
+{
+  "messageType": 3,
+  "isOutdated": false,
+  "unavailabilityType": 1,
+  "reasonCode": 1,
+  "eventStart": "2024-09-26T14:03:00Z",
+  "eventStop": "2024-09-26T18:00:00Z",
+  "unavailabilityReason": "Failure",
+  "transmissionUnits": [
+    {
+      "name": "FI → SE3",
+      "inAreaEic": "10YFI-1--------U",
+      "inAreaName": "FI",
+      "outAreaEic": "10Y1001A1001A46L",
+      "outAreaName": "SE3",
+      "installedCapacity": 1200,
+      "timePeriods": [
+        {
+          "unavailableCapacity": 1200,
+          "availableCapacity": 0,
+          "eventStart": "2024-09-26T14:03:00Z",
+          "eventStop": "2024-09-26T14:15:00Z"
+        },
+        {
+          "unavailableCapacity": 1200,
+          "availableCapacity": 0,
+          "eventStart": "2024-09-26T14:15:00Z",
+          "eventStop": "2024-09-26T14:30:00Z"
+        },
+        {
+          "unavailableCapacity": 1200,
+          "availableCapacity": 0,
+          "eventStart": "2024-09-26T14:30:00Z",
+          "eventStop": "2024-09-26T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 1200,
+          "availableCapacity": 0,
+          "eventStart": "2024-09-26T15:00:00Z",
+          "eventStop": "2024-09-26T18:00:00Z"
+        }
+      ]
+    },
+    {
+      "name": "SE3 → FI",
+      "inAreaEic": "10Y1001A1001A46L",
+      "inAreaName": "SE3",
+      "outAreaEic": "10YFI-1--------U",
+      "outAreaName": "FI",
+      "installedCapacity": 1200,
+      "timePeriods": [
+        {
+          "unavailableCapacity": 1200,
+          "availableCapacity": 0,
+          "eventStart": "2024-09-26T14:03:00Z",
+          "eventStop": "2024-09-26T14:15:00Z"
+        },
+        {
+          "unavailableCapacity": 1200,
+          "availableCapacity": 0,
+          "eventStart": "2024-09-26T14:15:00Z",
+          "eventStop": "2024-09-26T14:30:00Z"
+        },
+        {
+          "unavailableCapacity": 1200,
+          "availableCapacity": 0,
+          "eventStart": "2024-09-26T14:30:00Z",
+          "eventStop": "2024-09-26T15:00:00Z"
+        },
+        {
+          "unavailableCapacity": 1200,
+          "availableCapacity": 0,
+          "eventStart": "2024-09-26T15:00:00Z",
+          "eventStop": "2024-09-26T18:00:00Z"
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "name": "Dannebo-Rauma (Fenno-Skan 2)",
+      "code": "10T-SE-FI-00005D"
+    }
+  ],
+  "marketParticipants": [
+    {
+      "name": "NUCS",
+      "code": "10V1001C--000187",
+      "acerCode": "000000000.00",
+      "eicCode": "10V1001C--000187"
+    },
+    {
+      "name": "Fingrid Oyj",
+      "code": "10X1001A1001A264",
+      "acerCode": "A0001427Y.FI",
+      "eicCode": "10X1001A1001A264",
+      "leiCode": "7437006ZZI1F7CUA5518"
+    }
+  ],
+  "eventStatus": 3,
+  "messageId": "3b2b1643-27cd-40ad-9651-a198fd0246d7",
+  "version": 2,
+  "publicationDate": "2024-09-26T16:45:07Z",
+  "publisherId": "N00643",
+  "publisherName": "Svenska kraftnät"
+}
