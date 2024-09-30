@@ -1,8 +1,6 @@
 import { EventStatus, Message, MessageType, UnavailabilityType } from '../umm/types'
 import { getProductionUnavailabilityUnits } from '../umm/parser'
 
-const ONE_WEEK_MS = 86400 * 1000
-
 export const isDismissedMessage = (ummMessage: Message): boolean => {
   return ummMessage.eventStatus === EventStatus.Dismissed
 }
@@ -18,14 +16,7 @@ export const isInterestingProductionUnavailabilityMessage = (ummMessage: Message
     return false
   }
 
-  // Planned unavailability needs to start within a week, we're not interested in outages scheduled years in advance
-  if (ummMessage.unavailabilityType === UnavailabilityType.Planned) {
-    return units[0].timePeriods.some(
-      (timePeriod) => timePeriod.eventStart.getTime() < new Date().getTime() + ONE_WEEK_MS,
-    )
-  }
-
-  return true
+  return ummMessage.unavailabilityType === UnavailabilityType.Unplanned
 }
 
 export const isInterestingTransmissionUnavailabilityMessage = (ummMessage: Message): boolean => {
