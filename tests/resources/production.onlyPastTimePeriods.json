@@ -1,0 +1,46 @@
+{
+  "messageType": 1,
+  "isOutdated": false,
+  "unavailabilityType": 2,
+  "reasonCode": 2,
+  "unavailabilityReason": "G3 unavailable due to crane lift in station",
+  "remarks": "New event stop time.",
+  "generationUnits": [
+    {
+      "productionUnitName": "Rana",
+      "productionUnitEic": "50WP00000000552X",
+      "productionUnitInstalledCapacity": 485,
+      "areaEic": "10YNO-4--------9",
+      "areaName": "NO4",
+      "fuelType": 12,
+      "name": "G3",
+      "eic": "50WG00000001305E",
+      "installedCapacity": 120,
+      "timePeriods": [
+        {
+          "unavailableCapacity": 120,
+          "availableCapacity": 0,
+          "eventStart": "2004-10-18T06:00:00Z",
+          "eventStop": "2004-10-18T07:40:00Z"
+        }
+      ]
+    }
+  ],
+  "marketParticipants": [
+    {
+      "name": "Statkraft Energi A.S.",
+      "code": "A0000927K.SE",
+      "acerCode": "A0000927K.SE",
+      "leiCode": "5299006LO74A8XKRK989"
+    }
+  ],
+  "eventStatus": 1,
+  "messageId": "89c61107-0c82-439b-8ba5-599ea9573f09",
+  "version": 2,
+  "publicationDate": "2024-10-18T07:43:53.717779Z",
+  "publisherId": "N00619",
+  "publisherName": "Statkraft Energi AS",
+  "acerRssMessageIds": [
+    "EUIMSG-G1U5PABQ0CQAZPA8Z8_002"
+  ]
+}
