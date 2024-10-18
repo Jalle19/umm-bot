@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "tsc",
+    "build": "rm -rf dist/ && tsc",
     "format": "prettier --write src/",
     "test": "jest"
   },
