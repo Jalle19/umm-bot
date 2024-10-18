@@ -8,6 +8,23 @@ to the Finnish market.
 The bot listens of for push notifications from Nord Pool's UMM SignalR endpoint, then looks up the message details 
 from the REST API and decides whether to send a chat message for it.
 
+## Usage
+
+The application takes sensitive configuration via environment variables, while the rest is configured with 
+command-line options:
+
+```
+$ SLACK_CHANNEL_ID=foo SLACK_BOT_TOKEN=bar node dist/umm-slack-bot.js --help
+node umm-slack-bot.js [options]
+
+Options:
+      --help          Show help                                        [boolean]
+      --version       Show version number                              [boolean]
+  -d, --databasePath  The path to the database file                   [required]
+```
+
+The specified database file is created if it doesn't exist (the directory must exist though).
+
 ## Running as a systemd service
 
 1. Copy the provided service file to /etc/systemd/system and modify the paths to match your deployment
