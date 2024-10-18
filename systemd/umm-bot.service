@@ -6,7 +6,7 @@ After=network.target
 WorkingDirectory=/opt/umm-bot
 ExecStartPre=/usr/bin/npm install
 ExecStartPre=/usr/bin/npm run build
-ExecStart=/usr/bin/node /opt/umm-bot/dist/umm-slack-bot.js
+ExecStart=/usr/bin/node /opt/umm-bot/dist/umm-slack-bot.js -d /opt/umm-bot/umm-bot.database.json
 Restart=always
 RestartSec=5
 
