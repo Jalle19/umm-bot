@@ -1,5 +1,7 @@
 # umm-bot
 
+[![CI](https://github.com/Jalle19/umm-bot/actions/workflows/ci.yml/badge.svg)](https://github.com/Jalle19/umm-bot/actions/workflows/ci.yml)
+
 Chat bot for Nord Pool REMIT UMM push notifications. Currently only handles production and transmission outages related 
 to the Finnish market.
 
