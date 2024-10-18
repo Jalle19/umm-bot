@@ -1,7 +1,8 @@
 {
   "scripts": {
-    "build": "tsc",
-    "format": "prettier --write src/",
+    "build": "rm -rf dist/ && tsc",
+    "format": "prettier --write src/ tests/",
+    "format-check": "prettier --check src/ tests/",
     "test": "jest"
   },
   "devDependencies": {
@@ -14,6 +15,7 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
-    "@slack/web-api": "^7.3.4"
+    "@slack/web-api": "^7.3.4",
+    "yargs": "^17.7.2"
   }
 }

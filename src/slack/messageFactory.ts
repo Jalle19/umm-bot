@@ -46,7 +46,7 @@ const createEventSection = (message: Message, unit?: Unit): SectionBlock => {
       },
       {
         'type': 'mrkdwn',
-        'text': `*Remarks*\n${message.remarks}`,
+        'text': `*Remarks*\n${message.remarks ?? 'N/A'}`,
       },
     ],
   }

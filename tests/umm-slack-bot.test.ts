@@ -1,18 +1,10 @@
-import { expect, it } from "@jest/globals";
-import * as fs from "node:fs";
-import { Message } from "../src/umm/types";
+import { expect, it } from '@jest/globals'
 import {
   isDismissedMessage,
   isInterestingProductionUnavailabilityMessage,
-  isInterestingTransmissionUnavailabilityMessage
+  isInterestingTransmissionUnavailabilityMessage,
 } from '../src/slack/classifier'
-import { parseMessage } from "../src/umm/parser";
-
-const readAndParseResource = (resource: string): Message => {
-  const raw = fs.readFileSync(resource)
-
-  return parseMessage(raw.toString('utf8'))
-}
+import { readAndParseResource } from './utils'
 
 it('determines that a message is dismissed', () => {
   const message = readAndParseResource('tests/resources/transmission.cancelled.json')
