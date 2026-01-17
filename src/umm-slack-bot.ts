@@ -96,4 +96,9 @@ let databasePath = argv.databasePath as string
   })
 
   await signalrClient.start()
+
+  // We need to handle signals manually
+  process.on('SIGINT', () => {
+    process.exit(0)
+  })
 })()
