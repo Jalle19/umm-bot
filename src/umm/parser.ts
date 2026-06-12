@@ -1,15 +1,8 @@
-import { GenerationUnit, Message, ProductionUnit, PushNotificationMessage, TimePeriod } from './types'
+import { GenerationUnit, Message, ProductionUnit, TimePeriod } from './types'
 
-export const parsePushMessage = (rawMessage: unknown): PushNotificationMessage => {
-  return {
-    MessageId: (rawMessage as any).MessageId,
-    Version: (rawMessage as any).Version,
-  }
-}
-
-export const parseMessage = (rawMessage: string): Message => {
-  return JSON.parse(rawMessage, (key, value) => {
-    // Convert timestamps to Date
+export const parseMessage = (rawMessage: unknown): Message => {
+  // Marshall to JSON and back so we can convert timestamps to Dates in nested structures too
+  return JSON.parse(JSON.stringify(rawMessage), (key, value) => {
     const dateFields = ['eventStart', 'eventStop', 'publicationDate']
 
     if (dateFields.includes(key)) {
@@ -17,7 +10,7 @@ export const parseMessage = (rawMessage: string): Message => {
     }
 
     return value
-  })
+  }) as Message
 }
 
 export const getBestTimePeriod = (timePeriods: TimePeriod[]): TimePeriod | undefined => {

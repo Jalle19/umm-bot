@@ -1,6 +1,4 @@
-import { SignalrClient } from './signalr/client'
-import { parsePushMessage } from './umm/parser'
-import { UmmClient } from './umm/client'
+import { parseMessage } from './umm/parser'
 import { ChatPostMessageArguments, WebClient } from '@slack/web-api'
 import {
   createDismissedMessageMessage,
@@ -14,6 +12,7 @@ import {
 } from './slack/classifier'
 import yargs from 'yargs'
 import { loadDatabase, persistDatabase } from './database/database'
+import { HubConnectionBuilder } from '@microsoft/signalr'
 
 // Read environment variables
 const SLACK_CHANNEL_ID = process.env.SLACK_CHANNEL_ID as string | undefined
@@ -38,16 +37,12 @@ const argv = yargs(process.argv.slice(2))
 let databasePath = argv.databasePath as string
 
 ;(async () => {
-  const signalrClient = new SignalrClient('https://ummws.nordpoolgroup.com', 'wss://ummws.nordpoolgroup.com')
-  const ummClient = new UmmClient()
+  const signalrClient = new HubConnectionBuilder().withUrl('https://ummwsng.nordpoolgroup.com/messageHub').build()
   const slackClient = new WebClient(SLACK_BOT_TOKEN)
   const database = await loadDatabase(databasePath)
 
   const handleMessage = async (message: unknown): Promise<void> => {
-    const pushMessage = parsePushMessage(message)
-
-    // Fetch the complete message from the API
-    const ummMessage = await ummClient.getMessage(pushMessage.MessageId, pushMessage.Version)
+    const ummMessage = parseMessage(message)
     console.dir(ummMessage)
 
     let slackMessage
@@ -90,9 +85,11 @@ let databasePath = argv.databasePath as string
     }
   }
 
-  signalrClient.subscribeHub('MessageHub', {
-    newMessage: handleMessage,
-    updateMessage: handleMessage,
+  signalrClient.on('newMessage', (message: unknown) => {
+    handleMessage(message)
+  })
+  signalrClient.on('updateMessage', (message: unknown) => {
+    handleMessage(message)
   })
 
   await signalrClient.start()

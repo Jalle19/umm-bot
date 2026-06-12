@@ -10,11 +10,11 @@ const areaFlagMap: Map<string, string> = new Map([
   ['SE2', 'flag-se'],
   ['SE3', 'flag-se'],
   ['SE4', 'flag-se'],
-  ['NO1', 'flag-se'],
-  ['NO2', 'flag-se'],
-  ['NO3', 'flag-se'],
-  ['NO4', 'flag-se'],
-  ['NO5', 'flag-se'],
+  ['NO1', 'flag-no'],
+  ['NO2', 'flag-no'],
+  ['NO3', 'flag-no'],
+  ['NO4', 'flag-no'],
+  ['NO5', 'flag-no'],
 ])
 
 const createEventSection = (message: Message, unit?: Unit): SectionBlock => {
