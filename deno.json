@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "default": {
+      "sys": true,
+      "env": true,
+      "read": true,
+      "net": true
+    }
+  }
+}
