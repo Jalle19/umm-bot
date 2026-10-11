@@ -14,7 +14,8 @@ export const parseMessage = (rawMessage: unknown): Message => {
 }
 
 export const getBestTimePeriod = (timePeriods: TimePeriod[]): TimePeriod | undefined => {
-  return timePeriods.find((timePeriod) => timePeriod.eventStop.getTime() > new Date().getTime())
+  // Prefer the first time period that ends in the future, otherwise just take the first one as fallback
+  return timePeriods.find((timePeriod) => timePeriod.eventStop.getTime() > new Date().getTime()) ?? timePeriods[0]
 }
 
 export const getProductionUnavailabilityUnits = (message: Message): ProductionUnit[] | GenerationUnit[] => {
